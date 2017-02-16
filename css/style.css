@@ -1,0 +1,112 @@
+body{
+    font-family: "sanfrancisco-regular", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+header .navbar{
+    background: #061533;
+    border-radius: 0;
+    color: #FFF;
+    margin-bottom: 0;
+}
+header .navbar-brand{
+    padding: 1px 20px;
+}
+header .nasaland-logo{
+    max-width: 45px;
+    height: auto;
+}
+header .navbar-nav a{
+    text-transform: uppercase;
+    color: #FFF;
+    transition: all .3s ease;
+}
+header .navbar-nav > li > a:focus{
+    background: #061533;
+    color: #f6680a;
+}
+header .navbar li.active a, header .navbar a:hover{
+    background: none;
+    color: #f6680a;
+}
+header .navbar-form{
+    border-bottom: 1px solid rgba(221, 221, 221, 0.48);
+    padding: 0 5px;
+    margin-top: 3px;
+    margin-right: 0;
+}
+header form input[type=search].form-control{
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    color: #FFF;
+
+}
+header form input[type=search].form-control:focus{
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+header form button{
+    background: none;
+    border: 0;
+    color: rgba(221, 221, 221, 0.48);
+}
+header .dropdown-menu, li.dropdown:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    background: #020c1f;
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.box-group{
+    display: flex !important;
+    flex-direction: row;
+    margin: 1px 0;
+}
+.box-group .box{
+    width: 100%;
+    background: #FFF;
+    padding: 1px;
+}
+.box-group .box:first-child{
+    padding-left: 0;
+}
+.box-group .box:last-child{
+    padding-right: 0;
+}
+.box-group .box img{
+    width: 100%;
+    height: auto;
+}
+footer{
+    background: #061533;
+    color: #FFF;
+}
+footer h3{
+    font-family: "sanfrancisco-bold";
+    text-transform: uppercase;
+}
+footer h3 span{
+    color: #f6680a;
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li a{
+    color: #e3e3e3;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: .9em;
+}
+footer ul li a:hover{
+    color: #f6680a;
+    text-decoration: none;
+}
+.copyright{
+    color: #9d9d9d;
+    border-top: 1px solid rgba(136, 136, 136, 0.43);
+    padding: 10px 0;
+    margin-top: 10px;
+}
