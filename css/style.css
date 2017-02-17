@@ -15,6 +15,9 @@ header .nasaland-logo{
     max-width: 45px;
     height: auto;
 }
+header .navbar-toggle span{
+    background: #FFF;
+}
 header .navbar-nav a{
     text-transform: uppercase;
     color: #FFF;
@@ -110,3 +113,14 @@ footer ul li a:hover{
     padding: 10px 0;
     margin-top: 10px;
 }
+
+@media (max-width: 768px){
+    .box-group{
+        display: block !important;
+    }
+    .box-group .box{
+        display: inline-block;
+        width: calc(100%/2 - 2px);
+    }
+}
+@media (max-width: 768px){
