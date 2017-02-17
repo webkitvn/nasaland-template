@@ -3,16 +3,17 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 header .navbar{
-    background: #061533;
+    background: rgb(6, 21, 51);
     border-radius: 0;
     color: #FFF;
     margin-bottom: 0;
 }
 header .navbar-brand{
     padding: 1px 20px;
+    height: auto;
 }
 header .nasaland-logo{
-    max-width: 45px;
+    max-width: 100px;
     height: auto;
 }
 header .navbar-toggle span{
@@ -122,5 +123,15 @@ footer ul li a:hover{
         display: inline-block;
         width: calc(100%/2 - 2px);
     }
+    header .navbar-toggle{
+        margin-top: 30px !important;
+    }
 }
-@media (max-width: 768px){
+@media (min-width: 768px){
+    header .navbar-nav, header .navbar-form{
+        margin-top: 25px !important;
+    }
+    header .navbar{
+        background: rgba(6, 21, 51, 0.75);
+    }
+}
