@@ -51,17 +51,13 @@
                             <li><a href="#">Custom link 1</a></li>
                             <li><a href="#">Custom link 2</a></li>
                             <li><a href="#">Custom link 3</a></li>
+                            <li><a id="btn-search" href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
                         </ul>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <input type="search" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="">
-                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                            </button>
-                        </form>
                     </div><!-- /.navbar-collapse -->
                 </div>
+                <form id="searchform" action="">
+                    <input type="search" name="s" value="" placeholder="Nhập từ khóa cần tìm...">
+                </form>
             </nav>
             
         </header>
@@ -180,5 +176,6 @@
         </footer>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -2,6 +2,9 @@ body{
     font-family: "sanfrancisco-regular", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+header{
+    position: relative;
+}
 header .navbar{
     background: rgb(6, 21, 51);
     border-radius: 0;
@@ -24,43 +27,46 @@ header .navbar-nav a{
     color: #FFF;
     transition: all .3s ease;
 }
-header .navbar-nav > li > a:focus{
+header .navbar-nav > li > a:focus,header .navbar-nav #btn-search.active{
     background: #061533;
     color: #f6680a;
+}
+header .navbar-nav #btn-search{
+    color: #FFF;
+    background: none;
 }
 header .navbar li.active a, header .navbar a:hover{
     background: none;
     color: #f6680a;
-}
-header .navbar-form{
-    border-bottom: 1px solid rgba(221, 221, 221, 0.48);
-    padding: 0 5px;
-    margin-top: 3px;
-    margin-right: 0;
-}
-header form input[type=search].form-control{
-    background: none;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    color: #FFF;
-
-}
-header form input[type=search].form-control:focus{
-    outline: 0;
-    border: 0;
-    box-shadow: none;
-}
-header form button{
-    background: none;
-    border: 0;
-    color: rgba(221, 221, 221, 0.48);
 }
 header .dropdown-menu, li.dropdown:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
     background: #020c1f;
 }
 li.dropdown:hover > .dropdown-menu {
     display: block;
+}
+header #searchform{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all .3s ease;
+}
+header #searchform.active{
+    display: block;
+    opacity: 1;
+}
+header form input[type=search]{
+    width: 100%;
+    background: #051127;
+    border: 0;
+    padding: 10px;
+    font-size: 2em;
+}
+header form input[type=search]:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
 }
 .box-group{
     display: flex !important;
@@ -133,5 +139,8 @@ footer ul li a:hover{
     }
     header .navbar{
         background: rgba(6, 21, 51, 0.75);
+    }
+    header .navbar-nav{
+        display: flex;
     }
 }
