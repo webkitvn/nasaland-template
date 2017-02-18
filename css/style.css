@@ -61,7 +61,8 @@ header form input[type=search]{
     background: #051127;
     border: 0;
     padding: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
+    text-align: center;
 }
 header form input[type=search]:focus{
     border: none;
