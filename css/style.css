@@ -140,7 +140,13 @@ footer ul li a:hover{
         width: calc(100%/2 - 2px);
     }
     header .navbar-toggle{
-        margin-top: 30px !important;
+        margin-top: 10px !important;
+    }
+    header .nasaland-logo{
+        width: 50px;
+    }
+    .slider{
+        margin-top: 52px;
     }
 }
 @media (min-width: 768px){
