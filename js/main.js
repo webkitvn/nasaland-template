@@ -6,3 +6,10 @@ jQuery(document).ready(function(){
         return false;
     })
 })
+jQuery('.ui.dropdown')
+    .dropdown()
+;
+jQuery('button#advance-search').click(function(){
+    jQuery('.advance-search').toggleClass('hidden');
+    return false;
+})

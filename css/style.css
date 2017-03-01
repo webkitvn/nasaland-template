@@ -130,7 +130,30 @@ footer ul li a:hover{
     padding: 10px 0;
     margin-top: 10px;
 }
-
+.page-duan .top-content{
+    background: #efefef;
+    padding: 20px;
+    margin: 20px auto;
+}
+.page-duan .top-content .main-title{
+    font-family: "sanfrancisco-bold";
+    text-transform: uppercase;
+    color: #f6680a;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.search-form-container .row{
+    margin-bottom: 10px;
+}
+.advance-search{
+    padding: 20px;
+    background: #45597a;
+    transition: all .3s ease;
+}
+.advance-search .row:last-child{
+    margin-bottom: 0;
+}
 @media (max-width: 768px){
     .box-group{
         display: block !important;
