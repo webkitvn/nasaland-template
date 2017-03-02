@@ -105,6 +105,8 @@ footer{
 footer h3{
     font-family: "sanfrancisco-bold";
     text-transform: uppercase;
+    font-size: 1.7em;
+    margin-top: 20px !important;
 }
 footer h3 span{
     color: #f6680a;
@@ -153,6 +155,88 @@ footer ul li a:hover{
 }
 .advance-search .row:last-child{
     margin-bottom: 0;
+}
+.prop-block{    
+    margin-bottom: 20px;
+}
+.prop-block-header{
+    border-bottom: 2px solid #333;
+    overflow: hidden;
+}
+.prop-block-header h3{
+    font-family: "sanfrancisco-bold", sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    color: #f6680a;
+}
+.prop-block-link{
+    float: right;
+}
+.prop-block .prop-block-content{
+    background: #f7f7f7;
+}
+.prop-post{
+    overflow: hidden;
+    border-bottom: 1px solid #FFF;
+    padding: 10px;
+}
+.prop-post .thumb{
+    position: relative;
+}
+.prop-post .thumb img{
+    width: 100% !important;
+    height: auto !important;
+}
+.prop-post .type{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 3px;
+    display: block;
+    padding: 3px 7px;
+    background: #d9534f;
+    color: #FFF;
+    font-size: .9em;
+}
+.prop-post .type.cho-thue{
+    background: #f0ad4e;
+}
+.prop-post .info{
+    position: relative;
+}
+.prop-post .info .entry-title{
+    margin-bottom: 10px;
+}
+.prop-post .meta{
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: 1em;
+}
+.prop-post .meta > div{
+    float: left;
+    width: 50%;
+    margin-bottom: 5px;
+}
+.prop-post .meta .price i{
+    color: #bc04bb;
+}
+.prop-post .meta .area i{
+    color: #07ce2d;
+}
+.prop-post .meta .location i{
+    color: #d40b3f;
+}
+.prop-post .meta .location a{
+    color: #111;
+}
+.prop-post .meta .location a:hover{
+    text-decoration: underline;
+}
+.prop-post .published{
+    
 }
 @media (max-width: 768px){
     .box-group{
