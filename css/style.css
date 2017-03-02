@@ -51,6 +51,7 @@ header #searchform{
     width: 100%;
     opacity: 0;
     transition: all .3s ease;
+    display: none;
 }
 header #searchform.active{
     display: block;
@@ -132,10 +133,11 @@ footer ul li a:hover{
     padding: 10px 0;
     margin-top: 10px;
 }
+.page-duan .main-content{
+    background: #f1f1f1;
+}
 .page-duan .top-content{
-    background: #efefef;
-    padding: 20px;
-    margin: 20px auto;
+    margin: 20px auto 30px;
 }
 .page-duan .top-content .main-title{
     font-family: "sanfrancisco-bold";
@@ -158,6 +160,7 @@ footer ul li a:hover{
 }
 .prop-block{    
     margin-bottom: 20px;
+    overflow: hidden;
 }
 .prop-block-header{
     border-bottom: 2px solid #333;
@@ -176,11 +179,11 @@ footer ul li a:hover{
     float: right;
 }
 .prop-block .prop-block-content{
-    background: #f7f7f7;
+    background: #ffffff;
 }
 .prop-post{
     overflow: hidden;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #efefef;
     padding: 10px;
 }
 .prop-post .thumb{
@@ -196,7 +199,7 @@ footer ul li a:hover{
     left: 5px;
     border-radius: 3px;
     display: block;
-    padding: 3px 7px;
+    padding: 1px 7px;
     background: #d9534f;
     color: #FFF;
     font-size: .9em;
@@ -235,8 +238,30 @@ footer ul li a:hover{
 .prop-post .meta .location a:hover{
     text-decoration: underline;
 }
-.prop-post .published{
-    
+.prop-block .prop-pagi{
+    float: right;
+    margin-top: 5px;
+}
+.prop-block .prop-pagi a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #FFF;
+    line-height: 26px;
+    text-align: center;
+    color: #111;
+    font-family: "sanfrancisco-bold", sans-serif;
+    margin-left: 5px;
+    float: left;
+    border: 2px solid #fff;
+    transition: all .3s ease;
+}
+.prop-block .prop-pagi a:last-child{
+    width: auto;
+    padding: 0 10px;
+}
+.prop-block .prop-pagi a:hover,.prop-block .prop-pagi a.current{
+    border-color: #666;
 }
 @media (max-width: 768px){
     .box-group{
