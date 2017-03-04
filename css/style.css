@@ -6,13 +6,17 @@ header{
     position: relative;
 }
 header .logo{
-    max-width: 100px;
-    margin-left: 15px;
+    max-width: 94px;
     display: block;
+    float: left;
 }
 header .logo img{
     width: 100%;
     height: auto;
+}
+header .top-banner{
+    padding: 2px;
+    display: inline-block;
 }
 header .navbar{
     background: rgb(6, 21, 51);
@@ -35,6 +39,8 @@ header .navbar-nav a{
     text-transform: uppercase;
     color: #ffffff;
     transition: all .3s ease;
+    padding-top: 10px;
+    padding-bottom: 10px !important;
 }
 header .navbar-nav > li > a:focus,header .navbar-nav #btn-search.active{
     background: #061533;
@@ -71,10 +77,11 @@ header #searchform{
 header #searchform.active{
     display: block;
     opacity: 1;
+    z-index: 500;
 }
 header form input[type=search]{
     width: 100%;
-    background: #051127;
+    background: rgba(5, 17, 39, 0.8);
     border: 0;
     padding: 10px;
     font-size: 1.5em;
@@ -85,17 +92,21 @@ header form input[type=search]:focus{
     box-shadow: none;
     outline: none;
 }
-header .hotline{
+header .right-link{
+    float: right;
+}
+header .hotline, header .register-link{
     display: block;
-    float   : right;
-    margin-top: 6px;
+    margin-top: 2px;
     background: #f6680a;
     color: #FFF;
-    padding: 10px 20px;
-    font-family: "sanfrancisco-bold";
-    border-radius: 5px;
-    font-size: 1.2em;
+    padding: 13px 10px;
+    font-size: 1em;
     transition: all .3s ease;
+    text-align: center;
+}
+header .register-link{
+    background: #444;
 }
 header .navbar .hotline:hover{
     text-decoration: none;
@@ -120,6 +131,21 @@ header .navbar .hotline:hover{
     width: 100%;
     background: #FFF;
     padding: 1px;
+    position: relative;
+}
+.box-group .box h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(62, 62, 62, 0.5);
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px;
+    min-width: 60%;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
 }
 .box-group .box:first-child{
     padding-left: 0;
@@ -332,7 +358,15 @@ footer ul li a:hover{
     }
 }
 @media (min-width: 768px){
+    header .navbar{
+        min-height: initial;
+    }
     header .navbar-nav{
         display: flex;
+        width: 100%;
+    }
+    header .navbar-nav>li{
+        width: 100%;
+        text-align: center;
     }
 }
