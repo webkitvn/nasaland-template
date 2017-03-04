@@ -5,6 +5,15 @@ body{
 header{
     position: relative;
 }
+header .logo{
+    max-width: 100px;
+    margin-left: 15px;
+    display: block;
+}
+header .logo img{
+    width: 100%;
+    height: auto;
+}
 header .navbar{
     background: rgb(6, 21, 51);
     border-radius: 0;
@@ -24,7 +33,7 @@ header .navbar-toggle span{
 }
 header .navbar-nav a{
     text-transform: uppercase;
-    color: #FFF;
+    color: #ffffff;
     transition: all .3s ease;
 }
 header .navbar-nav > li > a:focus,header .navbar-nav #btn-search.active{
@@ -44,6 +53,12 @@ header .dropdown-menu, li.dropdown:hover,.nav .open>a, .nav .open>a:focus, .nav 
 }
 li.dropdown:hover > .dropdown-menu {
     display: block;
+}
+.dropdown-menu>li>a{
+    color: #FFF;
+}
+header .navbar-nav>li:hover>a{
+    color: #f6680a;
 }
 header #searchform{
     position: absolute;
@@ -69,6 +84,23 @@ header form input[type=search]:focus{
     border: none;
     box-shadow: none;
     outline: none;
+}
+header .hotline{
+    display: block;
+    float   : right;
+    margin-top: 6px;
+    background: #f6680a;
+    color: #FFF;
+    padding: 10px 20px;
+    font-family: "sanfrancisco-bold";
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: all .3s ease;
+}
+header .navbar .hotline:hover{
+    text-decoration: none;
+    color: #FFF;
+    background: #df5d07;
 }
 .carousel-control{
     background: none !important;
@@ -139,6 +171,10 @@ footer ul li a:hover{
 .page-duan .top-content{
     margin: 20px auto 30px;
 }
+.page-duan .top-content .search-form-container button[type=submit]{
+    background: #f6680a;
+    color: #FFF;
+}
 .page-duan .top-content .main-title{
     font-family: "sanfrancisco-bold";
     text-transform: uppercase;
@@ -177,6 +213,19 @@ footer ul li a:hover{
 }
 .prop-block-link{
     float: right;
+    margin-top: 5px;
+}
+.prop-block-link a{
+    color: #FFF;
+    margin-left: 10px;
+    background: rgb(246, 104, 10);
+    padding: 3px 10px;
+    border-radius: 3px !important;
+    opacity: .75;
+    transition: all .3s ease;
+}
+.prop-block-link a:hover, .prop-block-link a.active{
+    opacity: 1;
 }
 .prop-block .prop-block-content{
     background: #ffffff;
@@ -212,16 +261,17 @@ footer ul li a:hover{
 }
 .prop-post .info .entry-title{
     margin-bottom: 10px;
+    font-size: 13px;
 }
 .prop-post .meta{
     display: table-cell;
     vertical-align: bottom;
-    font-size: 1em;
+    font-size: 12px;
 }
 .prop-post .meta > div{
     float: left;
     width: 50%;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 .prop-post .meta .price i{
     color: #bc04bb;
@@ -282,12 +332,6 @@ footer ul li a:hover{
     }
 }
 @media (min-width: 768px){
-    header .navbar-nav, header .navbar-form{
-        margin-top: 25px !important;
-    }
-    header .navbar{
-        background: rgba(6, 21, 51, 0.75);
-    }
     header .navbar-nav{
         display: flex;
     }
