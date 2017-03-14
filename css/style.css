@@ -1,6 +1,7 @@
 body{
     font-family: "sanfrancisco-regular", sans-serif;
     -webkit-font-smoothing: antialiased;
+    background: #f1f1f1;
 }
 header{
     position: relative;
@@ -198,8 +199,8 @@ footer ul li a:hover{
     margin: 20px auto 30px;
 }
 .page-duan .top-content .search-form-container button[type=submit]{
-    background: #f6680a;
-    color: #FFF;
+    background: #061533;
+    color: #f6680a;
 }
 .page-duan .top-content .main-title{
     font-family: "sanfrancisco-bold";
@@ -212,9 +213,21 @@ footer ul li a:hover{
 .search-form-container .row{
     margin-bottom: 10px;
 }
+#advance-search{
+    text-align: center;
+    clear: both;
+    float: none;
+    display: block;
+    margin: 3px auto;
+    max-width: 100%;
+    width: 200px;
+    text-transform: uppercase;
+    color: #111;
+    text-decoration: none !important;
+}
 .advance-search{
     padding: 20px;
-    background: #45597a;
+    background: #f6680a;
     transition: all .3s ease;
 }
 .advance-search .row:last-child{
@@ -235,7 +248,10 @@ footer ul li a:hover{
     display: inline-block;
     float: left;
     margin: 0;
-    color: #f6680a;
+    background: #f6680a;
+    color: #FFF;
+    padding: 5px 10px;
+    width: 100%;
 }
 .prop-block-link{
     float: right;
@@ -339,6 +355,184 @@ footer ul li a:hover{
 .prop-block .prop-pagi a:hover,.prop-block .prop-pagi a.current{
     border-color: #666;
 }
+.page-duan .feature{
+    overflow: hidden;
+}
+.page-duan .first{
+    background: #061533;
+    margin: 0 0 20px;
+    color: #e9e9e9;
+    padding: 10px 0;
+}
+.page-duan > [class^="col-"]{
+    padding: 0;
+}
+.duan{
+    background: #f1f1f1;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    color: #444;
+    overflow: hidden;
+    transition: all .3s linear;
+    border: 1px solid #bababa;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+.page-duan .first .duan:hover{
+    background: #061533;
+    color: #FFF;
+}
+.page-duan .first .image{
+    width: 120px;
+    float: left;
+    margin-right: 10px;
+}
+.page-duan .first img{
+    width: 100% !important;
+    height: auto !important;
+}
+.duan .info{
+    box-sizing: border-box;
+    font-size: .85em;
+    padding: 5px !important;
+}
+.duan .info p{
+    margin-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.duan .title{
+    font-family: "sanfrancisco-bold", sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #f6680a;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.page-duan .first .duan .title{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.page-duan .first .duan .info{
+    font-size: 12px;
+}
+.page-duan .first .info{
+    font-size: 1em;
+    padding: 20px;
+}
+.page-duan .first .title{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.page-duan .first .title a{
+    color: #f6680a;
+}
+.page-duan .first .meta{
+    font-size: 1em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.page-duan .first .description{
+    font-size: 1.1em;
+    text-align: justify;
+}
+.page-duan .first .viewmore{
+    display: block;
+    float: right;
+    margin: 10px 0;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    background: #f6680a;
+    color: #FFF;
+    font-family: "sanfrancisco-regular";
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.page-duan .first .viewmore:hover{
+    background: #061533;
+}
+.page-duan .cat-list{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    border: 1px solid rgb(6, 21, 51);
+    border-bottom: 0;
+}
+.page-duan .cat-list li{
+    display: table-cell;
+    width: 100%;
+    background: #FFF;
+    border-right: 1px solid rgb(6, 21, 51);;
+    vertical-align: middle;
+}
+.page-duan .cat-list li:last-child{
+    border-right: 0;
+}
+.page-duan .cat-list li.active,.page-duan .cat-list li:hover{
+    background: #061533;
+    position: relative;
+}
+.page-duan .cat-list li a{
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color: #061533;
+}
+.page-duan .cat-list li.active a,.page-duan .cat-list li:hover a{
+    color: #FFF;
+}
+.left-content .header{
+    border-bottom: 2px solid #444;
+
+}
+.left-content ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.left-content ul .duan{
+    font-size: 1.2em;
+    background: #FFF;
+    pointer: initial;
+}
+.left-content ul .duan .image{
+    width: 170px;
+    float: left;
+    margin-right: 10px;
+}
+.left-content ul .duan .image img{
+    width: 100% !important;
+    height: 100% !important;
+}
+.left-content ul .duan .title{
+    font-size: 1.2em;
+}
+.left-content ul .duan a{
+    color: #111;
+}
+.right-content .header{
+    border-bottom: 2px solid #111;
+}
+.right-content .header h3{
+    display: block;
+    background: #f22222;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: "sanfrancisco-bold";
+    color: #FFF;
+    font-size: 1.5em;
+}
+/*-----------MEDIA------------*/
+
 @media (max-width: 768px){
     .box-group{
         display: block !important;

@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
 jQuery('.ui.dropdown')
     .dropdown()
 ;
-jQuery('button#advance-search').click(function(){
+jQuery('a#advance-search').click(function(){
     jQuery('.advance-search').toggleClass('hidden');
     return false;
 })
