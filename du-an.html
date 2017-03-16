@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/semantic.min.css">
-        <link rel="stylesheet" href="css/form.min.css">
-        <link rel="stylesheet" href="css/sanfranciscoregular.css">
-        <link rel="stylesheet" href="css/sanfranciscomedium.css">
-        <link rel="stylesheet" href="css/sanfranciscobold.css">
-        <script src="https://use.fontawesome.com/89c66d180d.js"></script>
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body class="page-duan">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/form.min.css">
+    <link rel="stylesheet" href="css/sanfranciscoregular.css">
+    <link rel="stylesheet" href="css/sanfranciscomedium.css">
+    <link rel="stylesheet" href="css/sanfranciscobold.css">
+    <script src="https://use.fontawesome.com/89c66d180d.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-        <header>
+<body class="page-duan">
+    <header>
+        <div class="top-page">
             <div class="container">
-                <a href="/" class="logo"><img src="img/nasaland.png" alt=""></a>
-                <div class="pull-right">
-                    <a href="#" class="top-banner"><img src="holder.js/870x92?bg=#DDD&fg=#71ab83" alt=""></a>
-                    <div class="right-link">
-                        <a href="tel:0909777500" class="hotline"><i class="fa fa-phone"></i> 0909 777 500</a>
-                        <a href="#" class="register-link">Đăng nhập / Đăng kí</a>
-                    </div>
+                <div class="top-link pull-right">
+                    <a href="#" class="hotline">Hotline: 0932.777.400</a>
+                    <a href="#" class="login">Đăng nhập</a>
+                    <a href="#" class="regiter">Đăng kí</a>
                 </div>
             </div>
+        </div>
+        <div class="navigation">
             <div class="container">
                 <nav class="navbar" role="navigation">
                     <div class="navbar-header">
@@ -37,14 +37,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
+                        <a class="navbar-brand" href="#"><img src="img/nasaland.png" alt=""></a>
                     </div>
-
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Trang chủ</a></li>
+                        <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">Giới thiệu</a></li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dự án <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Căn hộ, chung cư</a></li>
@@ -53,177 +52,182 @@
                                     <li><a href="#">Đất nền</a></li>
                                     <li><a href="#">Nhà phố</a></li>
                                 </ul>
-                                </li>
+                            </li>
                             <li><a href="#">Sàn giao dịch</a></li>
                             <li><a href="#">Tin tức</a></li>
                             <li><a href="#">Tuyển dụng</a></li>
                             <li><a href="#">Liên hệ</a></li>
-                            <li><a id="btn-search" href="#"><img src="img/image_large.png" alt=""></a></li>
+                            <li>
+                                <a id="btn-search" href="#"><img src="img/image_large.png" alt=""></a>
+                            </li>
                         </ul>
-                    </div><!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.navbar-collapse -->
                     <form id="searchform" action="">
                         <input type="search" name="s" value="">
                     </form>
                 </nav>
             </div>
-        </header>
-        <div class="main-content">
-            <div class="container">
-                <div class="top-content">
-                    <div class="search-form-container">
-                        <form class="search-form ui form" action="">
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <div class="top-content">
+                <div class="search-form-container">
+                    <form class="search-form ui form" action="">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="ui fluid action input big">
+                                    <input type="text" class="keywords" placeholder="Nhập từ khóa cần tìm kiếm (vd: dự án quận 2)">
+                                    <select class="ui compact big selection dropdown">
+                                        <option value="all">Tất cả</option>
+                                        <option selected="" value="canban">Cần bán</option>
+                                        <option value="chothue">Cho thuê</option>
+                                    </select>
+                                    <button type="submit" class="ui big button">
+                                        Tìm kiếm
+                                    </button>
+                                </div>
+                                <a href="#" id="advance-search" class="text-center">Tìm kiếm nâng cao</a>
+                            </div>
+                        </div>
+                        <div class="advance-search hidden">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                    <div class="ui fluid action input big">
-                                        <input type="text" placeholder="Nhập từ khóa cần tìm kiếm (vd: dự án quận 2)">
-                                        <select class="ui compact big selection dropdown">
-                                            <option value="all">Tất cả</option>
-                                            <option selected="" value="canban">Cần bán</option>
-                                            <option value="chothue">Cho thuê</option>
-                                        </select>
-                                        <button type="submit" class="ui big button">
-                                            Tìm kiếm
-                                        </button>
-                                    </div>
-                                    <a href="#" id="advance-search" class="text-center">Tìm kiếm nâng cao</a>
-                                </div>
-                            </div>
-                            <div class="advance-search hidden">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-4 col-md-4">
-                                        <div class="ui form">
-                                            <div class="field">
-                                                <div class="ui selection dropdown">
-                                                    <input type="hidden" name="loaiduan">
-                                                    <i class="dropdown icon"></i>
-                                                    <div class="default text">Loại dự án</div>
-                                                    <div class="menu">
-                                                        <div class="item" data-value="1">Căn hộ, chung cư</div>
-                                                        <div class="item" data-value="2">Nhà phố</div>
-                                                        <div class="item" data-value="3">Biệt thự</div>
-                                                        <div class="item" data-value="4">Đất nền</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-4">
-                                        <div class="ui form">
-                                            <div class="field">
-                                                <div class="ui selection search dropdown">
-                                                    <input type="hidden" name="tinhthanh">
-                                                    <i class="dropdown icon"></i>
-                                                    <div class="default text">Tỉnh thành</div>
-                                                    <div class="menu">
-                                                        <div class="item" data-value="1">Hồ Chí Minh</div>
-                                                        <div class="item" data-value="2">Hà Nội</div>
-                                                        <div class="item" data-value="3">Đồng Nai</div>
-                                                        <div class="item" data-value="4">Bình Dương</div>
-                                                        <div class="item" data-value="5">Đà Nẵng</div>
-                                                        <div class="item" data-value="6">Nha Trang</div>
-                                                        <div class="item" data-value="7">Long An</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-4">
-                                        <div class="ui form">
-                                            <div class="field">
-                                                <div class="ui selection search dropdown">
-                                                    <input type="hidden" name="quanhuyen">
-                                                    <i class="dropdown icon"></i>
-                                                    <div class="default text">Quận huyện</div>
-                                                    <div class="menu">
-                                                        <div class="item" data-value="1">Quận 1</div>
-                                                        <div class="item" data-value="2">Quận 2</div>
-                                                        <div class="item" data-value="3">Quận 3</div>
-                                                        <div class="item" data-value="4">Quận 4</div>
-                                                        <div class="item" data-value="5">Quận 5</div>
-                                                        <div class="item" data-value="6">Quận 6</div>
-                                                        <div class="item" data-value="7">Quận 7</div>
-                                                        <div class="item" data-value="7">Bình Thạnh</div>
-                                                        <div class="item" data-value="7">Gò Vấp</div>
-                                                        <div class="item" data-value="7">Tân Bình</div>
-                                                        <div class="item" data-value="7">Phú Nhuận</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-4 col-md-3">
-                                        <div class="ui form">
-                                            <div class="field">
-                                                <div class="ui selection search dropdown">
-                                                    <input type="hidden" name="giatu">
-                                                    <i class="dropdown icon"></i>
-                                                    <div class="default text">Giá từ</div>
-                                                    <div class="menu">
-                                                        <div class="item" data-value="1">Dưới 100 triệu</div>
-                                                        <div class="item" data-value="2">Từ 100 triệu đến 500 triệu</div>
-                                                        <div class="item" data-value="3">Từ 500 triệu đến 1 tỷ</div>
-                                                        <div class="item" data-value="4">Từ 1 tỷ đến 3 tỷ</div>
-                                                        <div class="item" data-value="5">Trên 3 tỷ</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3">
-                                        <div class="ui form">
-                                            <div class="field">
-                                                <div class="ui selection search dropdown">
-                                                    <input type="hidden" name="huong">
-                                                    <i class="dropdown icon"></i>
-                                                    <div class="default text">Hướng</div>
-                                                    <div class="menu">
-                                                        <div class="item" data-value="1">Đông</div>
-                                                        <div class="item" data-value="2">Tây</div>
-                                                        <div class="item" data-value="3">Nam</div>
-                                                        <div class="item" data-value="4">Bắc</div>
-                                                        <div class="item" data-value="5">Đông bắc</div>
-                                                        <div class="item" data-value="6">Đông nam</div>
-                                                        <div class="item" data-value="7">Tây bắc</div>
-                                                        <div class="item" data-value="8">Tây nam</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3">
-                                        <div class="ui form">
-                                            <div class="field">
-                                                <div class="ui selection search dropdown">
-                                                    <input type="hidden" name="dientich">
-                                                    <i class="dropdown icon"></i>
-                                                    <div class="default text">Diện tích</div>
-                                                    <div class="menu">
-                                                        <div class="item" data-value="1">Trên 30 m<sup>2</sup></div>
-                                                        <div class="item" data-value="2">Trên 100 m<sup>2</sup></div>
-                                                        <div class="item" data-value="3">Trên 200 m<sup>2</sup></div>
-                                                        <div class="item" data-value="4">Trên 300 m<sup>2</sup></div>
-                                                        <div class="item" data-value="5">Trên 500 m<sup>2</sup></div>
-                                                        <div class="item" data-value="6">Trên 600 m<sup>2</sup></div>
-                                                        <div class="item" data-value="7">Trên 700 m<sup>2</sup></div>
-                                                        <div class="item" data-value="8">Trên 1000 m<sup>2</sup></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3">
+                                <div class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="ui form">
                                         <div class="field">
-                                            <input type="number" name="sophongngu" placeholder="Số phòng ngủ">
+                                            <div class="ui selection dropdown">
+                                                <input type="hidden" name="loaiduan">
+                                                <i class="dropdown icon"></i>
+                                                <div class="default text">Loại dự án</div>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Căn hộ, chung cư</div>
+                                                    <div class="item" data-value="2">Nhà phố</div>
+                                                    <div class="item" data-value="3">Biệt thự</div>
+                                                    <div class="item" data-value="4">Đất nền</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="ui form">
+                                        <div class="field">
+                                            <div class="ui selection search dropdown">
+                                                <input type="hidden" name="tinhthanh">
+                                                <i class="dropdown icon"></i>
+                                                <div class="default text">Tỉnh thành</div>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Hồ Chí Minh</div>
+                                                    <div class="item" data-value="2">Hà Nội</div>
+                                                    <div class="item" data-value="3">Đồng Nai</div>
+                                                    <div class="item" data-value="4">Bình Dương</div>
+                                                    <div class="item" data-value="5">Đà Nẵng</div>
+                                                    <div class="item" data-value="6">Nha Trang</div>
+                                                    <div class="item" data-value="7">Long An</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="ui form">
+                                        <div class="field">
+                                            <div class="ui selection search dropdown">
+                                                <input type="hidden" name="quanhuyen">
+                                                <i class="dropdown icon"></i>
+                                                <div class="default text">Quận huyện</div>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Quận 1</div>
+                                                    <div class="item" data-value="2">Quận 2</div>
+                                                    <div class="item" data-value="3">Quận 3</div>
+                                                    <div class="item" data-value="4">Quận 4</div>
+                                                    <div class="item" data-value="5">Quận 5</div>
+                                                    <div class="item" data-value="6">Quận 6</div>
+                                                    <div class="item" data-value="7">Quận 7</div>
+                                                    <div class="item" data-value="7">Bình Thạnh</div>
+                                                    <div class="item" data-value="7">Gò Vấp</div>
+                                                    <div class="item" data-value="7">Tân Bình</div>
+                                                    <div class="item" data-value="7">Phú Nhuận</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                    <div class="ui form">
+                                        <div class="field">
+                                            <div class="ui selection search dropdown">
+                                                <input type="hidden" name="giatu">
+                                                <i class="dropdown icon"></i>
+                                                <div class="default text">Giá từ</div>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Dưới 100 triệu</div>
+                                                    <div class="item" data-value="2">Từ 100 triệu đến 500 triệu</div>
+                                                    <div class="item" data-value="3">Từ 500 triệu đến 1 tỷ</div>
+                                                    <div class="item" data-value="4">Từ 1 tỷ đến 3 tỷ</div>
+                                                    <div class="item" data-value="5">Trên 3 tỷ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                    <div class="ui form">
+                                        <div class="field">
+                                            <div class="ui selection search dropdown">
+                                                <input type="hidden" name="huong">
+                                                <i class="dropdown icon"></i>
+                                                <div class="default text">Hướng</div>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Đông</div>
+                                                    <div class="item" data-value="2">Tây</div>
+                                                    <div class="item" data-value="3">Nam</div>
+                                                    <div class="item" data-value="4">Bắc</div>
+                                                    <div class="item" data-value="5">Đông bắc</div>
+                                                    <div class="item" data-value="6">Đông nam</div>
+                                                    <div class="item" data-value="7">Tây bắc</div>
+                                                    <div class="item" data-value="8">Tây nam</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                    <div class="ui form">
+                                        <div class="field">
+                                            <div class="ui selection search dropdown">
+                                                <input type="hidden" name="dientich">
+                                                <i class="dropdown icon"></i>
+                                                <div class="default text">Diện tích</div>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Trên 30 m<sup>2</sup></div>
+                                                    <div class="item" data-value="2">Trên 100 m<sup>2</sup></div>
+                                                    <div class="item" data-value="3">Trên 200 m<sup>2</sup></div>
+                                                    <div class="item" data-value="4">Trên 300 m<sup>2</sup></div>
+                                                    <div class="item" data-value="5">Trên 500 m<sup>2</sup></div>
+                                                    <div class="item" data-value="6">Trên 600 m<sup>2</sup></div>
+                                                    <div class="item" data-value="7">Trên 700 m<sup>2</sup></div>
+                                                    <div class="item" data-value="8">Trên 1000 m<sup>2</sup></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                    <div class="field">
+                                        <input type="number" name="sophongngu" placeholder="Số phòng ngủ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
+        <div class="top-duan">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -247,9 +251,12 @@
                             <div class="info">
                                 <h2 class="title"><a href="#">Căn hộ Hà Đô Quận 10</a></h2>
                                 <div class="meta">
-                                    <strong>- Vị trí dự án: </strong> Đường 3/2, Quận 10, Tp.HCM <br>
-                                    <strong>- Giá từ: </strong> 17tr/m<sup>2</sup> <br>
-                                    <strong>- Diện tích: </strong> 100m<sup>2</sup> <br>
+                                    <strong>- Vị trí dự án: </strong> Đường 3/2, Quận 10, Tp.HCM
+                                    <br>
+                                    <strong>- Giá từ: </strong> 17tr/m<sup>2</sup>
+                                    <br>
+                                    <strong>- Diện tích: </strong> 100m<sup>2</sup>
+                                    <br>
                                 </div>
                                 <div class="description">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sequi, aut provident labore placeat unde quidem, inventore, possimus quisquam quia architecto, doloremque perspiciatis. Commodi, perspiciatis, delectus inventore earum ratione architecto.</p>
@@ -311,286 +318,310 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <div class="prop-block">
-                            <div class="prop-block-header">
-                                <h3 class="prop-block-title">Dự án mới</h3>
-                            </div>
-                            <div class="prop-block-content">
-                                <div class="prop-posts">
-                                    <div class="prop-post hentry">
-                                        <div class="row">
-                                            <div class="col-xs-5 col-md-5">
-                                                <div class="thumb">
-                                                    <a href="#"><img data-src="holder.js/300x170?bg=#8ed6a4&fg=#71ab83" alt=""></a>
-                                                </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="prop-block">
+                        <div class="prop-block-header">
+                            <h3 class="prop-block-title">Dự án mới</h3>
+                        </div>
+                        <div class="prop-block-content">
+                            <div class="prop-posts">
+                                <div class="prop-post hentry">
+                                    <div class="row">
+                                        <div class="col-xs-5 col-md-5">
+                                            <div class="thumb">
+                                                <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
-                                                <div class="info">
-                                                    <a href="#">
-                                                        <h4 class="entry-title">
+                                        </div>
+                                        <div class="col-xs-7 col-md-7">
+                                            <div class="info">
+                                                <a href="#">
+                                                    <h4 class="entry-title">
                                                             Bán nhà Thụy Khuê MT 5m có sân rộng, đã xây kiên cố 3.5Tx68m2
                                                         </h4>
-                                                    </a>
-                                                    <div class="meta">
-                                                        <div class="price">
-                                                            <i class="fa fa-money" aria-hidden="true"></i> <span>5.5 tỷ</span>
-                                                        </div>
-                                                        <div class="area">
-                                                            <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
-                                                        </div>
-                                                        <div class="location">
-                                                            <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
-                                                        </div>
-                                                        <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                </a>
+                                                <div class="meta">
+                                                    <div class="price">
+                                                        <i class="fa fa-money" aria-hidden="true"></i> <span>5.5 tỷ</span>
                                                     </div>
+                                                    <div class="area">
+                                                        <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
+                                                    </div>
+                                                    <div class="location">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
+                                                    </div>
+                                                    <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="prop-post hentry">
-                                        <div class="row">
-                                            <div class="col-xs-5 col-md-5">
-                                                <div class="thumb">
-                                                    <a href="#"><img data-src="holder.js/300x170?bg=#8ed6a4&fg=#71ab83" alt=""></a>
-                                                </div>
+                                </div>
+                                <div class="prop-post hentry">
+                                    <div class="row">
+                                        <div class="col-xs-5 col-md-5">
+                                            <div class="thumb">
+                                                <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
-                                                <div class="info">
-                                                    <a href="#">
-                                                        <h4 class="entry-title">
+                                        </div>
+                                        <div class="col-xs-7 col-md-7">
+                                            <div class="info">
+                                                <a href="#">
+                                                    <h4 class="entry-title">
                                                             Phòng Đẹp, Máy Lạnh 4tr - 4tr5, 2 Cửa sổ, Giờ Tự Do, Cư xá Lữ Gia, đối diện ĐH Bách Khoa
                                                         </h4>
-                                                    </a>
-                                                    <div class="meta">
-                                                        <div class="price">
-                                                            <i class="fa fa-money" aria-hidden="true"></i> <span>5tr/tháng</span>
-                                                        </div>
-                                                        <div class="area">
-                                                            <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
-                                                        </div>
-                                                        <div class="location">
-                                                            <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
-                                                        </div>
-                                                        <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                </a>
+                                                <div class="meta">
+                                                    <div class="price">
+                                                        <i class="fa fa-money" aria-hidden="true"></i> <span>5tr/tháng</span>
                                                     </div>
+                                                    <div class="area">
+                                                        <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
+                                                    </div>
+                                                    <div class="location">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
+                                                    </div>
+                                                    <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="prop-post hentry">
-                                        <div class="row">
-                                            <div class="col-xs-5 col-md-5">
-                                                <div class="thumb">
-                                                    <a href="#"><img data-src="holder.js/300x170?bg=#8ed6a4&fg=#71ab83" alt=""></a>
-                                                </div>
+                                </div>
+                                <div class="prop-post hentry">
+                                    <div class="row">
+                                        <div class="col-xs-5 col-md-5">
+                                            <div class="thumb">
+                                                <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
-                                                <div class="info">
-                                                    <a href="#">
-                                                        <h4 class="entry-title">
+                                        </div>
+                                        <div class="col-xs-7 col-md-7">
+                                            <div class="info">
+                                                <a href="#">
+                                                    <h4 class="entry-title">
                                                             Bán nhà Thụy Khuê MT 5m có sân rộng, đã xây kiên cố 3.5Tx68m2, gần Hồ Tây, SĐCC, dân trí cao
                                                         </h4>
-                                                    </a>
-                                                    <div class="meta">
-                                                        <div class="price">
-                                                            <i class="fa fa-money" aria-hidden="true"></i> <span>5.5 tỷ</span>
-                                                        </div>
-                                                        <div class="area">
-                                                            <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
-                                                        </div>
-                                                        <div class="location">
-                                                            <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
-                                                        </div>
-                                                        <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                </a>
+                                                <div class="meta">
+                                                    <div class="price">
+                                                        <i class="fa fa-money" aria-hidden="true"></i> <span>5.5 tỷ</span>
                                                     </div>
+                                                    <div class="area">
+                                                        <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
+                                                    </div>
+                                                    <div class="location">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
+                                                    </div>
+                                                    <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="prop-post hentry">
-                                        <div class="row">
-                                            <div class="col-xs-5 col-md-5">
-                                                <div class="thumb">
-                                                    <a href="#"><img data-src="holder.js/300x170?bg=#8ed6a4&fg=#71ab83" alt=""></a>
-                                                </div>
+                                </div>
+                                <div class="prop-post hentry">
+                                    <div class="row">
+                                        <div class="col-xs-5 col-md-5">
+                                            <div class="thumb">
+                                                <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
-                                                <div class="info">
-                                                    <a href="#">
-                                                        <h4 class="entry-title">
+                                        </div>
+                                        <div class="col-xs-7 col-md-7">
+                                            <div class="info">
+                                                <a href="#">
+                                                    <h4 class="entry-title">
                                                             Phòng Đẹp, Máy Lạnh 4tr - 4tr5, 2 Cửa sổ, Giờ Tự Do, Cư xá Lữ Gia, đối diện ĐH Bách Khoa
                                                         </h4>
-                                                    </a>
-                                                    <div class="meta">
-                                                        <div class="price">
-                                                            <i class="fa fa-money" aria-hidden="true"></i> <span>5tr/tháng</span>
-                                                        </div>
-                                                        <div class="area">
-                                                            <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
-                                                        </div>
-                                                        <div class="location">
-                                                            <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
-                                                        </div>
-                                                        <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                </a>
+                                                <div class="meta">
+                                                    <div class="price">
+                                                        <i class="fa fa-money" aria-hidden="true"></i> <span>5tr/tháng</span>
                                                     </div>
+                                                    <div class="area">
+                                                        <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
+                                                    </div>
+                                                    <div class="location">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
+                                                    </div>
+                                                    <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="prop-post hentry">
-                                        <div class="row">
-                                            <div class="col-xs-5 col-md-5">
-                                                <div class="thumb">
-                                                    <a href="#"><img data-src="holder.js/300x170?bg=#8ed6a4&fg=#71ab83" alt=""></a>
-                                                </div>
+                                </div>
+                                <div class="prop-post hentry">
+                                    <div class="row">
+                                        <div class="col-xs-5 col-md-5">
+                                            <div class="thumb">
+                                                <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
-                                                <div class="info">
-                                                    <a href="#">
-                                                        <h4 class="entry-title">
+                                        </div>
+                                        <div class="col-xs-7 col-md-7">
+                                            <div class="info">
+                                                <a href="#">
+                                                    <h4 class="entry-title">
                                                             Bán nhà Thụy Khuê MT 5m có sân rộng, đã xây kiên cố 3.5Tx68m2, gần Hồ Tây, SĐCC, dân trí cao
                                                         </h4>
-                                                    </a>
-                                                    <div class="meta">
-                                                        <div class="price">
-                                                            <i class="fa fa-money" aria-hidden="true"></i> <span>5.5 tỷ</span>
-                                                        </div>
-                                                        <div class="area">
-                                                            <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
-                                                        </div>
-                                                        <div class="location">
-                                                            <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
-                                                        </div>
-                                                        <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                </a>
+                                                <div class="meta">
+                                                    <div class="price">
+                                                        <i class="fa fa-money" aria-hidden="true"></i> <span>5.5 tỷ</span>
                                                     </div>
+                                                    <div class="area">
+                                                        <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
+                                                    </div>
+                                                    <div class="location">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
+                                                    </div>
+                                                    <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="prop-post hentry">
-                                        <div class="row">
-                                            <div class="col-xs-5 col-md-5">
-                                                <div class="thumb">
-                                                    <a href="#"><img data-src="holder.js/300x170?bg=#8ed6a4&fg=#71ab83" alt=""></a>
-                                                </div>
+                                </div>
+                                <div class="prop-post hentry">
+                                    <div class="row">
+                                        <div class="col-xs-5 col-md-5">
+                                            <div class="thumb">
+                                                <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
-                                                <div class="info">
-                                                    <a href="#">
-                                                        <h4 class="entry-title">
+                                        </div>
+                                        <div class="col-xs-7 col-md-7">
+                                            <div class="info">
+                                                <a href="#">
+                                                    <h4 class="entry-title">
                                                             Phòng Đẹp, Máy Lạnh 4tr - 4tr5, 2 Cửa sổ, Giờ Tự Do, Cư xá Lữ Gia, đối diện ĐH Bách Khoa
                                                         </h4>
-                                                    </a>
-                                                    <div class="meta">
-                                                        <div class="price">
-                                                            <i class="fa fa-money" aria-hidden="true"></i> <span>5tr/tháng</span>
-                                                        </div>
-                                                        <div class="area">
-                                                            <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
-                                                        </div>
-                                                        <div class="location">
-                                                            <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
-                                                        </div>
-                                                        <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                </a>
+                                                <div class="meta">
+                                                    <div class="price">
+                                                        <i class="fa fa-money" aria-hidden="true"></i> <span>5tr/tháng</span>
                                                     </div>
+                                                    <div class="area">
+                                                        <i class="fa fa-home" aria-hidden="true"></i> <span>100 m<sup>2</sup></span>
+                                                    </div>
+                                                    <div class="location">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
+                                                    </div>
+                                                    <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="prop-pagi">
-                                <a class="current" href="#">1</span>
+                        </div>
+                        <div class="prop-pagi">
+                            <a class="current" href="#">1</span>
                                 <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>
-                                <a href="#">Xem tất cả</a>
-                            </div>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">Xem tất cả</a>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-3">
-                        <div class="right-content">
-                            <div class="header">
-                                <h3>Phân tích đầu tư</h3>
-                            </div>
-                            <div class="content">
-                                <ul>
-                                    <li class="post"><a href="#">TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
-                                    <li class="post"><a href="#">Nhà đầu tư căn hộ lo ngân hàng siết cho vay</a></li>
-                                    <li class="post"><a href="#">Mua bán nhà đất chỉ có giấy viết tay được cấp sổ đỏ 6</a></li>
-                                    <li class="post"><a href="#">Năm 2017 chưa có bong bóng bất động sản </a></li>
-                                    <li class="post"><a href="#">Hà Nội: dồi dào nguồn cung nhà giá rẻ đầu năm</a></li>
-                                    <li class="post"><a href="#">Giới đầu tư tìm quỹ đất mới tại khu Tây Sài Gòn</a></li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="right-content">
+                        <div class="header">
+                            <h3>Phân tích đầu tư</h3>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li class="post"><a href="#">TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
+                                <li class="post"><a href="#">Nhà đầu tư căn hộ lo ngân hàng siết cho vay</a></li>
+                                <li class="post"><a href="#">Mua bán nhà đất chỉ có giấy viết tay được cấp sổ đỏ 6</a></li>
+                                <li class="post"><a href="#">Năm 2017 chưa có bong bóng bất động sản </a></li>
+                                <li class="post"><a href="#">Hà Nội: dồi dào nguồn cung nhà giá rẻ đầu năm</a></li>
+                                <li class="post"><a href="#">Giới đầu tư tìm quỹ đất mới tại khu Tây Sài Gòn</a></li>
+                                <li class="post"><a href="#">TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
+                                <li class="post"><a href="#">Nhà đầu tư căn hộ lo ngân hàng siết cho vay</a></li>
+                                <li class="post"><a href="#">Mua bán nhà đất chỉ có giấy viết tay được cấp sổ đỏ 6</a></li>
+                                <li class="post"><a href="#">Năm 2017 chưa có bong bóng bất động sản </a></li>
+                                <li class="post"><a href="#">Hà Nội: dồi dào nguồn cung nhà giá rẻ đầu năm</a></li>
+                                <li class="post"><a href="#">Giới đầu tư tìm quỹ đất mới tại khu Tây Sài Gòn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="right-content ads">
+                        <div class="content">
+                            <a href="#">
+                                <img src="holder.js/300x300?random=yes&text=TinhLaiXuat" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right-content ads">
+                        <div class="content">
+                            <a href="#">
+                                <img src="holder.js/300x600?random=yes&text=Banner" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-3">
-                        <h3>Về <span>Nasaland</span></h3>
-                        <ul>
-                            <li><a href="">Giới thiệu nasaland</a></li>
-                            <li><a href="">Lĩnh vực hoạt động</a></li>
-                            <li><a href="">Liên hệ</a></li>
-                            <li><a href="">Tuyển dụng</a></li>
-                            <li><a href="">Đối tác</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <h3>Danh mục <span>dự án</span></h3>
-                        <ul>
-                            <li><a href="">Saigon Royal Residence</a></li>
-                            <li><a href="">Thủ Thiêm Garden</a></li>
-                            <li><a href="">The Vista</a></li>
-                            <li><a href="">Lancaster Lincoln</a></li>
-                            <li><a href="">The Sun Avenue</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <h3>Liên <span>kết</span></h3>
-                        <ul>
-                            <li><a href="">Nhà đất quận 1</a></li>
-                            <li><a href="">Nhà đất quận 2</a></li>
-                            <li><a href="">Nhà đất quận 3</a></li>
-                            <li><a href="">Nhà đất quận 4</a></li>
-                            <li><a href="">Nhà đất quận Bình Thạnh</a></li>
-                            <li><a href="">Nhà đất quận Thủ Đức</a></li>
-                            <li><a href="">Nhà đất quận Tân Bình</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <h3>Điều khoản <span>sử dụng</span></h3>
-                        <ul>
-                            <li><a href="">Điều khoản thỏa thuận </a></li>
-                            <li><a href="">Quy chế hoạt động</a></li>
-                            <li><a href="">Những câu hỏi thường gặp</a></li>
-                            <li><a href="">Chính sách bảo mật</a></li>
-                        </ul>
-                    </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <h3>Về <span>Nasaland</span></h3>
+                    <ul>
+                        <li><a href="">Giới thiệu nasaland</a></li>
+                        <li><a href="">Lĩnh vực hoạt động</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Đối tác</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="copyright">
-                            Copyright &copy; 2017 Nasaland. All rights reserved.
-                        </div>
+                <div class="col-xs-12 col-md-3">
+                    <h3>Danh mục <span>dự án</span></h3>
+                    <ul>
+                        <li><a href="">Saigon Royal Residence</a></li>
+                        <li><a href="">Thủ Thiêm Garden</a></li>
+                        <li><a href="">The Vista</a></li>
+                        <li><a href="">Lancaster Lincoln</a></li>
+                        <li><a href="">The Sun Avenue</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h3>Liên <span>kết</span></h3>
+                    <ul>
+                        <li><a href="">Nhà đất quận 1</a></li>
+                        <li><a href="">Nhà đất quận 2</a></li>
+                        <li><a href="">Nhà đất quận 3</a></li>
+                        <li><a href="">Nhà đất quận 4</a></li>
+                        <li><a href="">Nhà đất quận Bình Thạnh</a></li>
+                        <li><a href="">Nhà đất quận Thủ Đức</a></li>
+                        <li><a href="">Nhà đất quận Tân Bình</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h3>Điều khoản <span>sử dụng</span></h3>
+                    <ul>
+                        <li><a href="">Điều khoản thỏa thuận </a></li>
+                        <li><a href="">Quy chế hoạt động</a></li>
+                        <li><a href="">Những câu hỏi thường gặp</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="copyright">
+                        Copyright &copy; 2017 Nasaland. All rights reserved.
                     </div>
                 </div>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="js/holder.min.js"></script>
-        <script src="js/semantic.min.js"></script>
-        <script src="js/form.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="js/form.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>

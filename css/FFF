@@ -5,12 +5,6 @@ body{
 }
 .top-page{
     background: #f1f1f1;
-    border-bottom: 1px solid #DDD;
-    padding: 3px 0;
-}
-.top-page .top-link a{
-    margin-left: 10px;
-    color: #444;
 }
 header{
     position: relative;
@@ -33,7 +27,7 @@ header .top-banner img{
     height: auto;
 }
 header .navigation{
-    background: #061533;
+    background: #FFF;
 }
 header .navbar{
     background: none;
@@ -58,10 +52,15 @@ header .navbar-toggle span{
 }
 header .navbar-nav a{
     text-transform: uppercase;
-    color: #f3f3f3;
+    color: #444;
     transition: all .3s ease;
     padding-top: 10px;
+    padding-bottom: 10px !important;
     font-family: "sanfrancisco-bold";
+}
+header .navbar-nav > li > a:focus,header .navbar-nav #btn-search.active{
+    background: #061533;
+    color: #f6680a;
 }
 header .navbar-nav #btn-search{
     color: #FFF;
@@ -199,13 +198,10 @@ footer ul li a:hover{
     margin-top: 10px;
 }
 .page-duan .main-content{
-    background: #fff;
+    background: #f1f1f1;
 }
 .page-duan .top-content{
     margin: 20px auto 30px;
-}
-.search-form-container .keywords{
-    background: #f1f1f1 !important;
 }
 .page-duan .top-content .search-form-container button[type=submit]{
     background: #061533;
@@ -283,7 +279,6 @@ footer ul li a:hover{
 }
 .prop-block .prop-block-content{
     background: #ffffff;
-    border: 1px solid #DDD;
 }
 .prop-post{
     overflow: hidden;
@@ -371,19 +366,17 @@ footer ul li a:hover{
 .prop-block .prop-pagi a:hover,.prop-block .prop-pagi a.current{
     border-color: #666;
 }
-.page-duan .top-duan{
-    background: #061533;
-    margin-bottom: 20px;
-    padding-top: 10px;
-}
 .page-duan .feature{
     overflow: hidden;
-    margin-bottom: 10px;
 }
 .page-duan .first{
     background: #061533;
+    margin: 0 0 20px;
     color: #e9e9e9;
     padding: 10px 0;
+}
+.page-duan > [class^="col-"]{
+    padding: 0;
 }
 .duan{
     background: #f1f1f1;
@@ -439,6 +432,7 @@ footer ul li a:hover{
 }
 .page-duan .first .info{
     font-size: 1em;
+    padding: 20px;
 }
 .page-duan .first .title{
     font-size: 2em;
@@ -493,7 +487,7 @@ footer ul li a:hover{
     border-right: 0;
 }
 .page-duan .cat-list li.active,.page-duan .cat-list li:hover{
-    background: #010a1d;
+    background: #061533;
     position: relative;
 }
 .page-duan .cat-list li a{
@@ -550,8 +544,7 @@ footer ul li a:hover{
 }
 .right-content .content{
     background: #FFF;
-    padding: 5px;
-    border: 1px solid #DDD;
+    padding: 10px;
 }
 .right-content .content ul{
     margin: 0;
@@ -566,13 +559,6 @@ footer ul li a:hover{
 }
 .right-content .content li a:hover{
     color: #f6680a;
-}
-.right-content{
-    margin-bottom: 10px;
-}
-.right-content.ads .content{
-    padding: 0;
-    border: 0;
 }
 .right-content.ads img{
     width: 100% !important;
@@ -603,11 +589,11 @@ footer ul li a:hover{
         min-height: initial;
     }
     header .navbar-brand {
-      height: 100px;
+      height: 80px;
     }
 
     header .nav >li >a {
-      padding-top: 42px;
+      padding-top: 30px;
       padding-bottom: 30px;
     }
     header .navbar-toggle {
