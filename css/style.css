@@ -261,6 +261,9 @@ footer ul li a:hover{
 .advance-search .row:last-child{
     margin-bottom: 0;
 }
+.middle-content{
+    margin-top: 20px;
+}
 .prop-block{    
     margin-bottom: 20px;
     overflow: hidden;
@@ -268,6 +271,7 @@ footer ul li a:hover{
 .prop-block-header{
     border-bottom: 2px solid #333;
     overflow: hidden;
+    position: relative;
 }
 .prop-block-header h3{
     font-family: "sanfrancisco-bold", sans-serif;
@@ -282,16 +286,17 @@ footer ul li a:hover{
     width: 100%;
 }
 .prop-block-link{
-    float: right;
-    margin-top: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 .prop-block-link a{
     color: #FFF;
     margin-left: 10px;
-    background: rgb(246, 104, 10);
+    background: rgb(48, 48, 48);
     padding: 3px 10px;
     border-radius: 3px !important;
-    opacity: .75;
+    opacity: .55;
     transition: all .3s ease;
 }
 .prop-block-link a:hover, .prop-block-link a.active{
@@ -320,12 +325,12 @@ footer ul li a:hover{
     border-radius: 3px;
     display: block;
     padding: 1px 7px;
-    background: #d9534f;
-    color: #FFF;
+    background: rgb(144, 144, 144);
+    color: #fff;
     font-size: .9em;
 }
 .prop-post .type.cho-thue{
-    background: #f0ad4e;
+    background: #747474;
 }
 .prop-post .info{
     position: relative;
