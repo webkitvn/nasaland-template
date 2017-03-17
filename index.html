@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/form.min.css">
     <link rel="stylesheet" href="css/sanfranciscoregular.css">
@@ -151,7 +151,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="ui fluid action input big">
-                                    <input type="text" placeholder="Nhập từ khóa cần tìm kiếm (vd: dự án quận 2)">
+                                    <input type="text" class="keywords" placeholder="Nhập từ khóa cần tìm kiếm (vd: dự án quận 2)">
                                     <select class="ui compact big selection dropdown">
                                         <option value="all">Tất cả</option>
                                         <option selected="" value="canban">Cần bán</option>
@@ -161,6 +161,7 @@
                                         Tìm kiếm
                                     </button>
                                 </div>
+                                <a href="#" id="advance-search" class="text-center">Tìm kiếm nâng cao</a>
                             </div>
                         </div>
                         <div class="advance-search hidden">
@@ -341,6 +342,9 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -371,6 +375,9 @@
                                                             <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                    </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
                                                     </div>
                                                 </div>
                                             </div>
@@ -403,6 +410,9 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -433,6 +443,9 @@
                                                             <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                    </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
                                                     </div>
                                                 </div>
                                             </div>
@@ -465,6 +478,9 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -495,6 +511,9 @@
                                                             <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                    </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
                                                     </div>
                                                 </div>
                                             </div>
@@ -551,6 +570,9 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -581,6 +603,9 @@
                                                             <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                    </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
                                                     </div>
                                                 </div>
                                             </div>
@@ -613,6 +638,9 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -643,6 +671,9 @@
                                                             <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                    </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
                                                     </div>
                                                 </div>
                                             </div>
@@ -675,6 +706,9 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -705,6 +739,9 @@
                                                             <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
+                                                    </div>
+                                                    <div class="excerpt">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
                                                     </div>
                                                 </div>
                                             </div>
