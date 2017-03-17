@@ -528,9 +528,10 @@ footer ul li a:hover{
     display: table-cell;
     width: 100%;
     background: #444;
-    border-right: 1px solid rgb(255, 255, 255);;
+    border-right: 1px solid rgb(255, 255, 255);
     vertical-align: middle;
     transition: all .3s ease;
+    justify-content: center;
 }
 .page-duan .cat-list li:last-child{
     border-right: 0;
@@ -639,6 +640,16 @@ footer ul li a:hover{
     }
     .slider{
         margin-top: 52px;
+    }
+    .page-duan .cat-list{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border: 0;
+    }
+    .page-duan .cat-list li{
+        border: 0;
+        border-bottom: 1px solid #DDD;
     }
 }
 @media (min-width: 768px){
