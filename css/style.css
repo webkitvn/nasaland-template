@@ -33,7 +33,7 @@ header .top-banner img{
     height: auto;
 }
 header .navigation{
-    background: #061533;
+    background: rgba(0,0,0,0.8);
 }
 header .navbar{
     background: none;
@@ -120,6 +120,21 @@ header .navbar .hotline:hover{
     color: #FFF;
     background: #df5d07;
 }
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-toggle {
+    z-index: 1;
+}
 .carousel-control{
     background: none !important;
 }
@@ -165,7 +180,7 @@ header .navbar .hotline:hover{
     height: auto;
 }
 footer{
-    background: #061533;
+    background: rgba(0,0,0,0.8);
     color: #FFF;
 }
 footer h3{
@@ -199,16 +214,17 @@ footer ul li a:hover{
     margin-top: 10px;
 }
 .page-duan .main-content{
-    background: #fff;
+    background: #f1f1f1;
 }
 .page-duan .top-content{
-    margin: 20px auto 30px;
+    padding: 20px 0 30px;
+    background: #FFF;
 }
 .search-form-container .keywords{
     background: #f1f1f1 !important;
 }
 .page-duan .top-content .search-form-container button[type=submit]{
-    background: #061533;
+    background: rgba(0,0,0,0.8);
     color: #fff;
 }
 .page-duan .top-content .search-form-container button[type=submit]:hover{
@@ -239,7 +255,7 @@ footer ul li a:hover{
 }
 .advance-search{
     padding: 20px;
-    background: #061533;
+    background: rgba(0,0,0,0.8);
     transition: all .3s ease;
 }
 .advance-search .row:last-child{
@@ -260,7 +276,7 @@ footer ul li a:hover{
     display: inline-block;
     float: left;
     margin: 0;
-    background: #061533;
+    background: rgba(0,0,0,0.8);
     color: #FFF;
     padding: 5px 10px;
     width: 100%;
@@ -372,7 +388,7 @@ footer ul li a:hover{
     border-color: #666;
 }
 .page-duan .top-duan{
-    background: #061533;
+    background: rgba(0,0,0,0.8);
     margin-bottom: 20px;
     padding-top: 10px;
 }
@@ -381,7 +397,6 @@ footer ul li a:hover{
     margin-bottom: 10px;
 }
 .page-duan .first{
-    background: #061533;
     color: #e9e9e9;
     padding: 10px 0;
 }
@@ -399,7 +414,7 @@ footer ul li a:hover{
     font-size: 1em;
 }
 .page-duan .first .duan:hover{
-    background: #061533;
+    background: rgba(0,0,0,0.8);
     color: #FFF;
 }
 .page-duan .first .image{
@@ -471,7 +486,7 @@ footer ul li a:hover{
     transition: all .3s ease;
 }
 .page-duan .first .viewmore:hover{
-    background: #061533;
+    background: rgba(0,0,0,0.8);
 }
 .page-duan .cat-list{
     list-style: none;
@@ -502,7 +517,7 @@ footer ul li a:hover{
     display: block;
     padding: 15px 10px;
     text-transform: uppercase;
-    color: #061533;
+    color: rgba(0,0,0,0.8);
 }
 .page-duan .cat-list li.active a,.page-duan .cat-list li:hover a{
     color: #FFF;
@@ -541,7 +556,7 @@ footer ul li a:hover{
 }
 .right-content .header h3{
     display: block;
-    background: #061533;
+    background: rgba(0,0,0,0.8);
     padding: 5px 10px;
     text-transform: uppercase;
     font-family: "sanfrancisco-bold";
