@@ -17,8 +17,8 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-canho">
-    <header class="">
+<body class="page-canho" data-spy="scroll" data-target="#navigation">
+    <header class="fixed" id="headroom">
         <div class="top-page">
             <div class="container">
                 <div class="top-link pull-right">
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="navigation">
+        <div class="navigation" id="navigation">
             <div class="container">
                 <nav class="navbar" role="navigation">
                     <div class="navbar-header">
@@ -45,14 +45,14 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav navbar-left">
-                            <li><a href="#">Tổng quan</a></li>
-                            <li><a href="#">Vị trí</a></li>
-                            <li><a href="#">Tiện ích</a></li>
+                            <li><a href="#tong-quan">Tổng quan</a></li>
+                            <li><a href="#vi-tri">Vị trí</a></li>
+                            <li><a href="#tien-ich">Tiện ích</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Mặt bằng</a></li>
-                            <li><a href="#">Thiết kế</a></li>
-                            <li><a href="#">Giá &amp; CSBH</a></li>
+                            <li><a href="#mat-bang">Mặt bằng</a></li>
+                            <li><a href="#thiet-ke">Thiết kế</a></li>
+                            <li><a href="#gia-csbh">Giá &amp; CSBH</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -116,13 +116,13 @@
             <div class="space-border"></div>
             <div class="info col-left pull-left">
                 <div class="scrollbar-outer">
-                	<div class="inner-content scrollbar-dynamic ">
-	                    <div style="padding: 10px; ">
-	                        <h2 class="title">ĐỈNH CAO CỦA GIỚI THƯỢNG LƯU</h2>
-	                        <div class="space-bar"></div>
-	                        <p>Như một quy luật tự nhiên, tất cả các thủ đô lớn, các thành phố phát triển trên thế giới đều có những dòng sông chảy qua. New York, Tokyo, Seoul hay Moscow…không nơi nào thiếu một dòng nước xuyên qua giữa lòng thành phố. Bởi đó là nguồn sinh khí, là nơi khởi nguồn sự sống, là dòng chảy mang thịnh vượng và tài lộc...</p>
-	                    </div>
-	                </div>
+                    <div class="inner-content scrollbar-dynamic ">
+                        <div style="padding: 10px; ">
+                            <h2 class="title">ĐỈNH CAO CỦA GIỚI THƯỢNG LƯU</h2>
+                            <div class="space-bar"></div>
+                            <p>Như một quy luật tự nhiên, tất cả các thủ đô lớn, các thành phố phát triển trên thế giới đều có những dòng sông chảy qua. New York, Tokyo, Seoul hay Moscow…không nơi nào thiếu một dòng nước xuyên qua giữa lòng thành phố. Bởi đó là nguồn sinh khí, là nơi khởi nguồn sự sống, là dòng chảy mang thịnh vượng và tài lộc...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -169,19 +169,19 @@
             <div class="space-border"></div>
             <div class="info col-right pull-right">
                 <div class="scrollbar-outer">
-                	<div class="inner-content scrollbar-dynamic">
-                    <div style="padding: 10px; ">
-                        <h2 class="title">VỊ TRÍ ĐẮC ĐỊA</h2>
-                        <div class="space-bar"></div>
-                        <p>Vinhomes Golden River được kiến tạo trên mảnh đất Ba Son nằm bên sông Sài Gòn, ngay trong lòng Quận 1, thuộc phân khu 3 theo quy hoạch trung tâm TP. Hồ Chí Minh mới – nơi phát triển các toà cao ốc văn phòng, khu đô thị mới và con đường ven sông tuyệt đẹp.</p>
-                        <ul>
-                            <li>Tọa lạc tại Ba Son ngay trong lòng Quận 1</li>
-                            <li>Nằm bên sông Sài Gòn và rạch Thị Nghè</li>
-                            <li>Thuộc phân khu 3 theo quy hoạch trung tâm TP. Hồ Chí Minh mới</li>
-                            <li>Gần các công trình công cộng khác: Thảo Cầm Viên, công viên Văn Thánh, sân golf Him Lam, Dinh Độc Lập</li>
-                        </ul>
+                    <div class="inner-content scrollbar-dynamic">
+                        <div style="padding: 10px; ">
+                            <h2 class="title">VỊ TRÍ ĐẮC ĐỊA</h2>
+                            <div class="space-bar"></div>
+                            <p>Vinhomes Golden River được kiến tạo trên mảnh đất Ba Son nằm bên sông Sài Gòn, ngay trong lòng Quận 1, thuộc phân khu 3 theo quy hoạch trung tâm TP. Hồ Chí Minh mới – nơi phát triển các toà cao ốc văn phòng, khu đô thị mới và con đường ven sông tuyệt đẹp.</p>
+                            <ul>
+                                <li>Tọa lạc tại Ba Son ngay trong lòng Quận 1</li>
+                                <li>Nằm bên sông Sài Gòn và rạch Thị Nghè</li>
+                                <li>Thuộc phân khu 3 theo quy hoạch trung tâm TP. Hồ Chí Minh mới</li>
+                                <li>Gần các công trình công cộng khác: Thảo Cầm Viên, công viên Văn Thánh, sân golf Him Lam, Dinh Độc Lập</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -228,40 +228,40 @@
             <div class="space-border"></div>
             <div class="info col-left pull-left ">
                 <div class="scrollbar-outer">
-                	<div class="inner-content scrollbar-dynamic ">
-                    <div style="padding: 10px; ">
-                        <h2 class="title">TIÊU CHUẨN SỐNG QUỐC TẾ</h2>
-                        <div class="space-bar"></div>
-                        <ol>
-                            <li>Quảng trường trung tâm</li>
-                            <li>Thảm cỏ để tổ chức sự kiện</li>
-                            <li>Quảng trường lịch sử</li>
-                            <li>Quảng trường điêu khắc nghệ thuật</li>
-                            <li>Sân chơi và quảng trường tiện ích</li>
-                            <li>Quảng trường tháp Landmark</li>
-                            <li>Khu vực ngắm cảnh ven sông</li>
-                            <li>Khu vực nghỉ chân có mái che ven sông</li>
-                            <li>Hồ bơi dành cho cư dân</li>
-                            <li>Khu BBQ</li>
-                            <li>Đài quan sát ngắm toàn cảnh sông</li>
-                            <li>Vườn hoa nhiệt đới Paradise</li>
-                            <li>Thác nước</li>
-                            <li>Vườn cọ và hồ nước cảnh quan</li>
-                            <li>Vườn thế giới</li>
-                            <li>Khu Gym & Fitness ngoài trời</li>
-                            <li>Sân tiện ích đa năng</li>
-                            <li>Khu đưa đón của trường Vinschool</li>
-                            <li>Khu vườn học ngoài trời trường Vinschool</li>
-                            <li>Công viên và thảm cỏ của trường Vinschool</li>
-                            <li>Hàng rào cây xanh</li>
-                            <li>Lối ra/vào hầm để xe</li>
-                            <li>Đường chạy bộ ven sông</li>
-                            <li>Khu tập Golf</li>
-                            <li>Bến thuyền</li>
-                            <li>Sân chơi trẻ em</li>
-                        </ol>
+                    <div class="inner-content scrollbar-dynamic ">
+                        <div style="padding: 10px; ">
+                            <h2 class="title">TIÊU CHUẨN SỐNG QUỐC TẾ</h2>
+                            <div class="space-bar"></div>
+                            <ol>
+                                <li>Quảng trường trung tâm</li>
+                                <li>Thảm cỏ để tổ chức sự kiện</li>
+                                <li>Quảng trường lịch sử</li>
+                                <li>Quảng trường điêu khắc nghệ thuật</li>
+                                <li>Sân chơi và quảng trường tiện ích</li>
+                                <li>Quảng trường tháp Landmark</li>
+                                <li>Khu vực ngắm cảnh ven sông</li>
+                                <li>Khu vực nghỉ chân có mái che ven sông</li>
+                                <li>Hồ bơi dành cho cư dân</li>
+                                <li>Khu BBQ</li>
+                                <li>Đài quan sát ngắm toàn cảnh sông</li>
+                                <li>Vườn hoa nhiệt đới Paradise</li>
+                                <li>Thác nước</li>
+                                <li>Vườn cọ và hồ nước cảnh quan</li>
+                                <li>Vườn thế giới</li>
+                                <li>Khu Gym & Fitness ngoài trời</li>
+                                <li>Sân tiện ích đa năng</li>
+                                <li>Khu đưa đón của trường Vinschool</li>
+                                <li>Khu vườn học ngoài trời trường Vinschool</li>
+                                <li>Công viên và thảm cỏ của trường Vinschool</li>
+                                <li>Hàng rào cây xanh</li>
+                                <li>Lối ra/vào hầm để xe</li>
+                                <li>Đường chạy bộ ven sông</li>
+                                <li>Khu tập Golf</li>
+                                <li>Bến thuyền</li>
+                                <li>Sân chơi trẻ em</li>
+                            </ol>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -308,29 +308,35 @@
             <div class="space-border"></div>
             <div class="info col-right pull-right">
                 <div class="scrollbar-outer">
-                	<div class="inner-content scrollbar-dynamic">
-                    <div style="padding: 10px; ">
-                        <h2 class="title">MẶT BẰNG TỔNG THỂ</h2>
-                        <div class="space-bar"></div>
-                        <p>Thị trường bất động sản (BĐS) năm 2016 có nhiều khởi sắc, trở thành một trong những kênh đầu tư hàng đầu. Biệt thự và căn hộ nghỉ dưỡng vốn trì trệ nhiều năm, sang năm 2016 đã có mức tiêu thụ tăng mạnh. Trong năm 2017, liệu xu hướng này có tiếp tục được duy trì hay một kênh đầu tư khác sẽ lên ngôi?</p>
-                        <p>Thị trường năm 2016 đánh dấu một năm bứt phá ở nhiều phân khúc. Nhà đầu tư BĐS đã quay lại do tỉ suất lợi nhuận khá cao, nhiều loại hình mới ra đời, thu hút mạnh dòng tiền nhàn rỗi. Nhiều dự án BĐS có quy mô lớn được phát triển bởi các tập đoàn danh tiếng trong và ngoài nước như Vinhomes, Novaland, Capital Land… đã nâng lĩnh vực BĐS Việt Nam lên tầm cao mới.</p>
-                        <p>Tương lai gần của kênh đầu tư bất động sản cũng được các chuyên gia đầu ngành thảo luận bàn tròn: Tiến sĩ Đinh Thế Hiển – chuyên gia kinh tế, ông Phan Công Chánh – chuyên gia BĐS cá nhân, ông Phạm Thanh Sáng – Phó Tổng giám đốc Khải Hoàn Land.</p>
+                    <div class="inner-content scrollbar-dynamic">
+                        <div style="padding: 10px; ">
+                            <h2 class="title">MẶT BẰNG TỔNG THỂ</h2>
+                            <div class="space-bar"></div>
+                            <p>Thị trường bất động sản (BĐS) năm 2016 có nhiều khởi sắc, trở thành một trong những kênh đầu tư hàng đầu. Biệt thự và căn hộ nghỉ dưỡng vốn trì trệ nhiều năm, sang năm 2016 đã có mức tiêu thụ tăng mạnh. Trong năm 2017, liệu xu hướng này có tiếp tục được duy trì hay một kênh đầu tư khác sẽ lên ngôi?</p>
+                            <p>Thị trường năm 2016 đánh dấu một năm bứt phá ở nhiều phân khúc. Nhà đầu tư BĐS đã quay lại do tỉ suất lợi nhuận khá cao, nhiều loại hình mới ra đời, thu hút mạnh dòng tiền nhàn rỗi. Nhiều dự án BĐS có quy mô lớn được phát triển bởi các tập đoàn danh tiếng trong và ngoài nước như Vinhomes, Novaland, Capital Land… đã nâng lĩnh vực BĐS Việt Nam lên tầm cao mới.</p>
+                            <p>Tương lai gần của kênh đầu tư bất động sản cũng được các chuyên gia đầu ngành thảo luận bàn tròn: Tiến sĩ Đinh Thế Hiển – chuyên gia kinh tế, ông Phan Công Chánh – chuyên gia BĐS cá nhân, ông Phạm Thanh Sáng – Phó Tổng giám đốc Khải Hoàn Land.</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
         <section id="thiet-ke" class="section-wrap full-height has-slide">
             <div class="slider col-right pull-right ">
-                <div id="carousel-5" class="carousel slide " data-ride="carousel ">
+                <div id="carousel-5" class="carousel slide ">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators ">
-                        <li data-target="#carousel-5" data-slide-to="0 " class="active "></li>
-                        <li data-target="#carousel-5" data-slide-to="1 "></li>
-                        <li data-target="#carousel-5" data-slide-to="2 "></li>
-                        <li data-target="#carousel-5" data-slide-to="3 "></li>
-                        <li data-target="#carousel-5" data-slide-to="4 "></li>
-                    </ol>
+                    <ul class="carousel-indicators ">
+                        <li data-target="#carousel-5" data-slide-to="0 " class="active ">Tầng hầm</li>
+                        <li data-target="#carousel-5" data-slide-to="1 ">Tầng trệt</li>
+                        <li data-target="#carousel-5" data-slide-to="2 ">Tầng 1</li>
+                        <li data-target="#carousel-5" data-slide-to="3 ">Tầng 2</li>
+                        <li data-target="#carousel-5" data-slide-to="4 ">Tầng 3</li>
+                        <li data-target="#carousel-5" data-slide-to="2 ">Tầng 1</li>
+                        <li data-target="#carousel-5" data-slide-to="3 ">Tầng 2</li>
+                        <li data-target="#carousel-5" data-slide-to="4 ">Tầng 3</li>
+                        <li data-target="#carousel-5" data-slide-to="2 ">Tầng 1</li>
+                        <li data-target="#carousel-5" data-slide-to="3 ">Tầng 2</li>
+                        <li data-target="#carousel-5" data-slide-to="4 ">Tầng 3</li>
+                    </ul>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner " role="listbox ">
                         <div class="item active">
@@ -363,17 +369,17 @@
             <div class="space-border"></div>
             <div class="info col-left pull-left">
                 <div class="scrollbar-outer">
-                	<div class="inner-content scrollbar-dynamic ">
-                    <div style="padding: 10px; ">
-                        <h2 class="title">THIẾT KẾ CĂN HỘ</h2>
-                        <div class="space-bar"></div>
-                        <p>Thứ nhất – Ngay tại trung tâm Quận 1 bạn không tìm ra miếng đất rộng 25,3 ha nằm ngay mặt tiền Sông Sài Gòn tiếp giáp 4 Quận trung tâm Quận 2, 5, 4, Bình Thạnh.</p>
-                        <p>Thứ hai – Theo phong thủy học thì Vinhomes Golden River nằm ngay thế “ Tựa sơn hướng thủy” đắc địa tốt nhất để phát triển một vùng đất trở nên giàu có và uy quyền.</p>
-                        <p>Thứ ba - Vinhomes Golden River là “trung gian” kết nối trung tâm hành chính cũ là quận 1 với trung tâm tài chính mới Thủ Thiêm Quận 2. Và là điểm đến đích của 2 cây cầu Thủ Thiêm 1, và Thủ Thiêm 2 bắt qua sông Sài Gòn nối liền Quận 2 với Quận1.</p>
-                        <p>Thứ tư - Khu đất dự án Vinhomes Golden River Ba Son đã được rất nhiều tập đoàn lớn trong và ngoài nước giành quyền phát triển dự án. Và Vingroup chính là tập đoàn đã được thành phố và bộ quốc phòng giao và phát triển dự án Vinhomes Golden River với định hướng quyết tâm biến nơi đây thành biểu tượng phồn hoa của TP HCM, quyết tâm lấy lại danh hiệu “hòn ngọc viễn đông” xưa kia.</p>
-                        <p>Thứ năm - Về kết nối giao thông của dự án Vinhomes Golden River là tuyệt vời khi có thể lưuthông bằng cả đường bộ (Tôn Đức Thắng – Nguyễn Hữu Cảnh), đường sắt dự án kếtnối trực tiếp ga số 4 tàu điện Metro đoạn đi âm dưới đất và đường thủy với bến du thuyền 5 sao.</p>
+                    <div class="inner-content scrollbar-dynamic ">
+                        <div style="padding: 10px; ">
+                            <h2 class="title">THIẾT KẾ CĂN HỘ</h2>
+                            <div class="space-bar"></div>
+                            <p>Thứ nhất – Ngay tại trung tâm Quận 1 bạn không tìm ra miếng đất rộng 25,3 ha nằm ngay mặt tiền Sông Sài Gòn tiếp giáp 4 Quận trung tâm Quận 2, 5, 4, Bình Thạnh.</p>
+                            <p>Thứ hai – Theo phong thủy học thì Vinhomes Golden River nằm ngay thế “ Tựa sơn hướng thủy” đắc địa tốt nhất để phát triển một vùng đất trở nên giàu có và uy quyền.</p>
+                            <p>Thứ ba - Vinhomes Golden River là “trung gian” kết nối trung tâm hành chính cũ là quận 1 với trung tâm tài chính mới Thủ Thiêm Quận 2. Và là điểm đến đích của 2 cây cầu Thủ Thiêm 1, và Thủ Thiêm 2 bắt qua sông Sài Gòn nối liền Quận 2 với Quận1.</p>
+                            <p>Thứ tư - Khu đất dự án Vinhomes Golden River Ba Son đã được rất nhiều tập đoàn lớn trong và ngoài nước giành quyền phát triển dự án. Và Vingroup chính là tập đoàn đã được thành phố và bộ quốc phòng giao và phát triển dự án Vinhomes Golden River với định hướng quyết tâm biến nơi đây thành biểu tượng phồn hoa của TP HCM, quyết tâm lấy lại danh hiệu “hòn ngọc viễn đông” xưa kia.</p>
+                            <p>Thứ năm - Về kết nối giao thông của dự án Vinhomes Golden River là tuyệt vời khi có thể lưuthông bằng cả đường bộ (Tôn Đức Thắng – Nguyễn Hữu Cảnh), đường sắt dự án kếtnối trực tiếp ga số 4 tàu điện Metro đoạn đi âm dưới đất và đường thủy với bến du thuyền 5 sao.</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -420,19 +426,19 @@
             <div class="space-border"></div>
             <div class="info col-right pull-right">
                 <div class="scrollbar-outer">
-                	<div class="inner-content scrollbar-dynamic">
-                    <div style="padding: 10px; ">
-                        <h2 class="title">GIÁ VS CSBH</h2>
-                        <div class="space-bar"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veniam ullam quis fuga deleniti pariatur sunt maxime qui sed quidem, sequi corporis nihil accusantium perferendis, minima accusamus, quo dignissimos! Soluta?</p>
-                        <p>Sunt libero, hic soluta voluptates placeat facere perspiciatis quaerat ex autem, debitis nam dignissimos ducimus eaque est velit consequatur dicta perferendis qui suscipit assumenda enim in recusandae accusamus. Non, at.</p>
-                        <p>Sit iste praesentium omnis vel illum distinctio aliquid numquam sunt commodi sint eveniet incidunt sapiente repellat tempora dolorum autem accusamus, est sequi, ipsum itaque ratione magnam quisquam explicabo! Consequuntur, tempora.</p>
-                        <p>Minus, quod. Quam distinctio voluptatibus consectetur ut quae pariatur, aspernatur facere consequatur magni debitis, temporibus impedit doloribus, maiores iure quas eveniet ratione recusandae dolores! Sapiente at vero voluptas nihil. Necessitatibus?</p>
-                        <p>Ea quia consequuntur dicta modi rem perspiciatis, impedit odit maxime atque magnam, aspernatur voluptate cum iure quo hic inventore praesentium explicabo nobis vitae animi excepturi sint corporis! Possimus, omnis, cupiditate!</p>
-                        <p>Iste sit consectetur sunt nostrum aperiam, eaque omnis, dolore laboriosam repudiandae dolor, explicabo vel. Ex porro molestiae eligendi exercitationem fugiat officia error, corrupti unde nam minus voluptate ipsum, fugit, odio.</p>
-                        <p>Ea mollitia quos, ex error pariatur ab quaerat. Ad voluptatem iure fugit itaque error ea natus praesentium, quod delectus est. Debitis iure modi corporis, blanditiis molestias laboriosam, repudiandae reiciendis natus!</p>
+                    <div class="inner-content scrollbar-dynamic">
+                        <div style="padding: 10px; ">
+                            <h2 class="title">GIÁ VS CSBH</h2>
+                            <div class="space-bar"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veniam ullam quis fuga deleniti pariatur sunt maxime qui sed quidem, sequi corporis nihil accusantium perferendis, minima accusamus, quo dignissimos! Soluta?</p>
+                            <p>Sunt libero, hic soluta voluptates placeat facere perspiciatis quaerat ex autem, debitis nam dignissimos ducimus eaque est velit consequatur dicta perferendis qui suscipit assumenda enim in recusandae accusamus. Non, at.</p>
+                            <p>Sit iste praesentium omnis vel illum distinctio aliquid numquam sunt commodi sint eveniet incidunt sapiente repellat tempora dolorum autem accusamus, est sequi, ipsum itaque ratione magnam quisquam explicabo! Consequuntur, tempora.</p>
+                            <p>Minus, quod. Quam distinctio voluptatibus consectetur ut quae pariatur, aspernatur facere consequatur magni debitis, temporibus impedit doloribus, maiores iure quas eveniet ratione recusandae dolores! Sapiente at vero voluptas nihil. Necessitatibus?</p>
+                            <p>Ea quia consequuntur dicta modi rem perspiciatis, impedit odit maxime atque magnam, aspernatur voluptate cum iure quo hic inventore praesentium explicabo nobis vitae animi excepturi sint corporis! Possimus, omnis, cupiditate!</p>
+                            <p>Iste sit consectetur sunt nostrum aperiam, eaque omnis, dolore laboriosam repudiandae dolor, explicabo vel. Ex porro molestiae eligendi exercitationem fugiat officia error, corrupti unde nam minus voluptate ipsum, fugit, odio.</p>
+                            <p>Ea mollitia quos, ex error pariatur ab quaerat. Ad voluptatem iure fugit itaque error ea natus praesentium, quod delectus est. Debitis iure modi corporis, blanditiis molestias laboriosam, repudiandae reiciendis natus!</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -491,12 +497,29 @@
             </div>
         </div>
     </footer>
+    <a href="#" id="contact-btn" class="">Đăng ký thông tin</a>
+    <div id="slidingcontact" class="slidingcontact">
+        <div class="content">
+        	<a id="close-btn" class="close-btn"><i class="glyphicon glyphicon-remove"></i></a>
+            <h3>Đăng kí nhận thông tin dự án</h3>
+            <p>Vui lòng nhập đầy đủ thông tin</p>
+            <form action="#">
+                <input type="text" name="your-name" placeholder="Họ tên*" required="">
+                <input type="email" name="your-email" placeholder="Email*" required="">
+                <input type="tel" name="your-tel" placeholder="Số điện thoại*" required="">
+                <textarea name="your-message" id="" cols="30" rows="10" placeholder="Nội dung nhu cầu"></textarea>
+                <input type="submit" value="Đăng kí">
+            </form>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="js/holder.min.js"></script>
     <script src="js/semantic.min.js"></script>
     <script src="js/form.min.js"></script>
     <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/jquery.headroom.js"></script>
+    <script src="js/headroom.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -6,7 +6,43 @@ $(document).ready(function() {
         return false;
     })
 
+    $('#contact-btn').click(function(event) {
+        event.preventDefault();
+        $('#slidingcontact').animate({
+            right: "0"
+        }, 500, function() {});
+        return false;
+    })
+    $('#close-btn').click(function(event) {
+        event.preventDefault();
+        $('#slidingcontact').animate({
+            right: "-310px"
+        }, 500, function() {});
+        return false;
+    })
+    $("#headroom").headroom({
+        "offset": 205,
+        "tolerance": 5,
+        "classes": {
+            "initial": "animated",
+            "pinned": "slideDown",
+            "unpinned": "slideUp"
+        }
+    });
     $('.scrollbar-outer').scrollbar();
+
+    $("#headroom .navbar ul li a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+        var hash = this.hash;
+        // animate
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 300, function() {
+            window.location.hash = hash;
+            $("#headroom").removeClass('slideDown').addClass('slideUp');
+        });
+
+    });
 
     //FULL DIV SLIDER
     var $item = $('.carousel .item');
@@ -30,10 +66,10 @@ $(document).ready(function() {
         $item.height($wHeight);
     });
 
-    $('.carousel').carousel({
-        interval: 6000,
-        pause: "false"
-    });
+    // $('.carousel').carousel({
+    //     interval: 6000,
+    //     pause: "false"
+    // });
 })
 $('.ui.dropdown')
     .dropdown();

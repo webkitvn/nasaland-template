@@ -19,10 +19,34 @@ header {
     position: relative;
 }
 
+.headroom--pinned {
+    display: block;
+}
+
+.headroom--unpinned {
+    display: none;
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.slideDown {
+    transform: translateY(0%);
+    transition: all .3s ease;
+}
+
+.slideUp {
+    transform: translateY(-100%);
+    transition: all .3s ease;
+}
+
 header.fixed {
     position: fixed !important;
     width: 100%;
     z-index: 999;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
 
 header .logo {
@@ -774,23 +798,27 @@ footer ul li a:hover {
     align-items: center;
     justify-content: center;
 }
-.section-wrap .space-border{
+
+.section-wrap .space-border {
     width: 0;
     height: 0;
     position: absolute;
     z-index: 3;
     border-style: solid;
 }
-.section-wrap:nth-child(even) .space-border{
+
+.section-wrap:nth-child(even) .space-border {
     left: 30%;
     border-width: 100vh 50px 0 0;
     border-color: #444 transparent transparent transparent;
 }
-.section-wrap:nth-child(odd) .space-border{
+
+.section-wrap:nth-child(odd) .space-border {
     right: 30%;
     border-width: 0 50px 100vh 0;
     border-color: transparent #444 transparent transparent;
 }
+
 .section-wrap .section-content {
     max-width: 100%;
 }
@@ -840,26 +868,31 @@ footer ul li a:hover {
     text-align: justify;
     padding: 10px 0;
 }
-.section-wrap .info.col-left{
+
+.section-wrap .info.col-left {
     padding-left: 20px;
 }
-.section-wrap .info.col-right{
+
+.section-wrap .info.col-right {
     padding-right: 20px;
 }
-.section-wrap .info .title{
+
+.section-wrap .info .title {
     color: #f6680a;
     font-family: "sanfrancisco-bold";
     font-size: 2em;
     margin-top: 5vh;
     text-align: left;
 }
-.section-wrap .space-bar{
+
+.section-wrap .space-bar {
     height: 1px;
     background: #f6680a;
     margin-bottom: 20px;
     position: relative;
 }
-.section-wrap .space-bar:before{
+
+.section-wrap .space-bar:before {
     content: " ";
     display: block;
     width: 7px;
@@ -873,11 +906,119 @@ footer ul li a:hover {
 .section-wrap .slider {
     width: 70%;
     overflow: hidden;
+    height: 100vh;
 }
-.section-wrap .slider .item.full-screen{
+
+.section-wrap .slider .item.full-screen {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#thiet-ke .carousel-indicators li {
+    text-indent: 0;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+#thiet-ke .carousel-indicators li.active {
+    color: #444;
+}
+
+#contact-btn,
+#contact-btn:active,
+#contact-btn:focus,
+#contact-btn:visited {
+    display: block;
+    position: fixed;
+    top: 100px;
+    z-index: 999;
+    right: 0;
+    background: #f6680a;
+    padding: 10px 15px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: .9em;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, .3);
+    text-decoration: none;
+}
+
+.slidingcontact {
+    position: fixed;
+    top: 0;
+    right: -310px;
+    z-index: 999;
+    transition: all .3s ease;
+}
+
+.slidingcontact .content {
+    background: #FFF;
+    max-width: 100%;
+    width: 300px;
+    padding: 50px 10px 20px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.slidingcontact .close-btn {
+    position: absolute;
+    top: 10px;
+    height: 10px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    color: #111;
+    opacity: .8;
+    transition: all .3s ease;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.slidingcontact .close-btn:hover {
+    opacity: 1;
+}
+
+.slidingcontact h3 {
+    font-family: "sanfrancisco-regular";
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+}
+
+.slidingcontact p {
+    text-align: center;
+}
+
+.slidingcontact input,
+.slidingcontact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #DDD;
+}
+
+.slidingcontact textarea {
+    height: 130px;
+}
+
+.slidingcontact input[type=submit] {
+    color: #444;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    font-family: "sanfrancisco-bold";
+}
+
+.slidingcontact input[type=submit]:hover {
+    background: #f6680a;
+    color: #FFF;
+}
+
 
 /*-----------MEDIA------------*/
 
@@ -908,36 +1049,40 @@ footer ul li a:hover {
         border: 0;
         border-bottom: 1px solid #DDD;
     }
-    .section-wrap#intro{
+    .section-wrap#intro {
         height: 100vh;
     }
-    .section-wrap{
+    .section-wrap {
         height: 0px;
     }
-    .section-wrap .space-border{
+    .section-wrap .space-border {
         display: none;
     }
-    .section-wrap .info, .section-wrap .slider{
+    .section-wrap .info,
+    .section-wrap .slider {
         height: auto;
         width: 100%;
     }
-    .section-wrap .info{
+    .section-wrap .info {
         padding: 10px;
     }
-    .section-wrap .slider .item.full-screen{
+    .section-wrap .slider .item.full-screen {
         height: 550px !important;
     }
 }
-@media (max-width: 640px){
-    .section-wrap .slider .item.full-screen{
+
+@media (max-width: 640px) {
+    .section-wrap .slider .item.full-screen {
         height: 458px !important;
     }
 }
-@media (max-width: 320px){
-    .section-wrap .slider .item.full-screen{
+
+@media (max-width: 320px) {
+    .section-wrap .slider .item.full-screen {
         height: 299px !important;
     }
 }
+
 @media (min-width: 768px) {
     header .navbar {
         min-height: initial;
@@ -955,10 +1100,13 @@ footer ul li a:hover {
     }
 }
 
+
 /*SCROLLBAR*/
-.scrollbar-outer{
+
+.scrollbar-outer {
     max-height: calc(100vh - 20px);
 }
+
 .scrollbar-outer > .scroll-element,
 .scrollbar-outer > .scroll-element div {
     border: none;
@@ -994,6 +1142,7 @@ footer ul li a:hover {
     width: 12px;
     opacity: .75;
 }
+
 .scrollbar-outer > .scroll-element.scroll-x .scroll-element_outer {
     height: 8px;
     top: 2px;
@@ -1071,3 +1220,4 @@ footer ul li a:hover {
 .scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
     top: -14px;
 }
+
