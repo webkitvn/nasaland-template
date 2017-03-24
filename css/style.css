@@ -1,10 +1,6 @@
-*{
-    -webkit-transform: translateZ(0) !important;
-    -moz-transform: translateZ(0) !important;
-    -ms-transform: translateZ(0) !important;
-    -o-transform: translateZ(0) !important;
-    transform: translateZ(0) !important;
-    -webkit-backface-visibility: hidden  !important;
+.clearfix{
+    float: none;
+    clear: both;
 }
 body {
     font-family: "sanfrancisco-regular", sans-serif;
@@ -227,6 +223,15 @@ header .navbar .hotline:hover {
     z-index: 1;
 }
 
+.slider{
+    -webkit-transform: translateZ(0) !important;
+    -moz-transform: translateZ(0) !important;
+    -ms-transform: translateZ(0) !important;
+    -o-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden  !important;
+}
+
 .carousel-control {
     background: none !important;
 }
@@ -280,14 +285,14 @@ header .navbar .hotline:hover {
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: #FFF;
+    background: rgb(231, 231, 231);
+    color: #111;
 }
 
 footer h3 {
     font-family: "sanfrancisco-bold";
     text-transform: uppercase;
-    font-size: 1.7em;
+    font-size: 1.2em;
     margin-top: 20px !important;
 }
 
@@ -302,10 +307,11 @@ footer ul {
 }
 
 footer ul li a {
-    color: #e3e3e3;
-    margin: 5px 0;
+    color: #111;
+    margin: 2px 0;
     display: inline-block;
     font-size: .9em;
+    font-family: "sanfrancisco-regular";
 }
 
 footer ul li a:hover {
@@ -318,6 +324,7 @@ footer ul li a:hover {
     border-top: 1px solid rgba(136, 136, 136, 0.43);
     padding: 10px 0;
     margin-top: 10px;
+    font-size: .9em;
 }
 
 .page-duan .main-content {
@@ -369,11 +376,13 @@ footer ul li a:hover {
     color: #111;
     text-decoration: none !important;
 }
-
-.advance-search {
+.advance-search{
     padding: 1px;
     background: #efefef;
-    transition: all .3s ease;
+    z-index: 999;
+}
+.advance-search .menu{
+    z-index: 9999;
 }
 .advance-search .form{
     width: 20%;
@@ -420,11 +429,11 @@ footer ul li a:hover {
 }
 
 .prop-block-link a {
-    color: #0f529e;
+    color: #0d8fdb;
     margin-left: 10px;
     padding: 3px 5px;
     border-radius: 3px !important;
-    transition: all .3s ease;
+    font-size: .9em;
 }
 
 .prop-block-link a:hover,
@@ -432,7 +441,21 @@ footer ul li a:hover {
     opacity: 1;
     color: #fd802d;
 }
+.prop-block-link .mua-ban:hover,.prop-block-link .mua-ban.active{
+    background: #f8591a;
+    color: #FFF;
+    -webkit-box-shadow: inset 0px 0px 1px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 0px 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 0px 1px 2px rgba(0,0,0,0.1);
 
+}
+.prop-block-link .cho-thue:hover,.prop-block-link .cho-thue.active{
+    background: #a9a9a9;
+    color: #FFF;
+    -webkit-box-shadow: inset 0px 0px 1px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 0px 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 0px 1px 2px rgba(0,0,0,0.1);
+}
 .prop-block .prop-block-content {
     background: #ffffff;
     border: 1px solid #DDD;
@@ -460,13 +483,13 @@ footer ul li a:hover {
     border-radius: 3px;
     display: block;
     padding: 1px 7px;
-    background: rgb(144, 144, 144);
+    background: rgb(248, 89, 26);
     color: #fff;
     font-size: 11px;
 }
 
 .prop-post .type.cho-thue {
-    background: #747474;
+    background: #a9a9a9;
 }
 
 .prop-post .info {

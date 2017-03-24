@@ -167,12 +167,12 @@
                         <div class="advance-search hidden">
                             <div class="ui form">
                                 <div class="field">
-                                    <div class="ui selection dropdown">
+                                    <div class="ui selection search dropdown">
                                         <input type="hidden" name="loainhadat">
                                         <i class="dropdown icon"></i>
                                         <div class="default text">Loại nhà đất</div>
                                         <div class="menu">
-                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="0">Loại nhà đất</div>
                                             <div class="item" data-value="1">Căn hộ, chung cư</div>
                                             <div class="item" data-value="2">Nhà phố</div>
                                             <div class="item" data-value="3">Biệt thự</div>
@@ -206,7 +206,7 @@
                                         <i class="dropdown icon"></i>
                                         <div class="default text">Quận huyện</div>
                                         <div class="menu">
-                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="0">Quận huyện</div>
                                             <div class="item" data-value="1">Quận 1</div>
                                             <div class="item" data-value="2">Quận 2</div>
                                             <div class="item" data-value="3">Quận 3</div>
@@ -229,6 +229,7 @@
                                         <i class="dropdown icon"></i>
                                         <div class="default text">Phường - Xã</div>
                                         <div class="menu">
+                                            <div class="item" data-value="0">Phường - Xã</div>
                                             <div class="item" data-value="1">Phường 1</div>
                                             <div class="item" data-value="2">Phường 2</div>
                                             <div class="item" data-value="3">Phường 3</div>
@@ -247,7 +248,7 @@
                                         <i class="dropdown icon"></i>
                                         <div class="default text">Đường</div>
                                         <div class="menu">
-                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="0">Đường</div>
                                             <div class="item" data-value="1">Đường 1</div>
                                             <div class="item" data-value="2">Đường 2</div>
                                             <div class="item" data-value="3">Đường 3</div>
@@ -266,7 +267,7 @@
                                         <i class="dropdown icon"></i>
                                         <div class="default text">Giá từ</div>
                                         <div class="menu">
-                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="0">Giá từ</div>
                                             <div class="item" data-value="1">Dưới 100 triệu</div>
                                             <div class="item" data-value="2">Từ 100 triệu đến 500 triệu</div>
                                             <div class="item" data-value="3">Từ 500 triệu đến 1 tỷ</div>
@@ -283,7 +284,7 @@
                                         <i class="dropdown icon"></i>
                                         <div class="default text">Hướng</div>
                                         <div class="menu">
-                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="0">Hướng</div>
                                             <div class="item" data-value="1">Đông</div>
                                             <div class="item" data-value="2">Tây</div>
                                             <div class="item" data-value="3">Nam</div>
@@ -303,7 +304,7 @@
                                         <i class="dropdown icon"></i>
                                         <div class="default text">Diện tích</div>
                                         <div class="menu">
-                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="0">Diện tích</div>
                                             <div class="item" data-value="1">Trên 30 m<sup>2</sup></div>
                                             <div class="item" data-value="2">Trên 100 m<sup>2</sup></div>
                                             <div class="item" data-value="3">Trên 200 m<sup>2</sup></div>
@@ -323,7 +324,7 @@
                                         <i class="dropdown icon"></i>
                                         <div class="default text">Số phòng ngủ</div>
                                         <div class="menu">
-                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="0">Số phòng ngủ</div>
                                             <div class="item" data-value="1">1+</div>
                                             <div class="item" data-value="2">2+</div>
                                             <div class="item" data-value="3">3+</div>
@@ -342,7 +343,7 @@
                                         <i class="dropdown icon"></i>
                                         <div class="default text">Chọn dự án</div>
                                         <div class="menu">
-                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="0">Chọn dự án</div>
                                             <div class="item" data-value="1">Saigon Royal Residence</div>
                                             <div class="item" data-value="2">Thủ Thiêm Garden</div>
                                             <div class="item" data-value="3">The Vista</div>
@@ -352,7 +353,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="clearfix"></div>
                         </div>
                     </form>
                 </div>
@@ -367,8 +367,8 @@
                                 <h3 class="prop-block-title">Tin dự án</h3>
                                 <div class="prop-block-link">
                                     <a class="active" href="#">Tất cả</a>
-                                    <a href="#">Mua bán</a>
-                                    <a href="#">Cho thuê</a>
+                                    <a href="#" class="mua-ban">Mua bán</a>
+                                    <a href="#" class="cho-thue">Cho thuê</a>
                                 </div>
                             </div>
                             <div class="prop-block-content">
@@ -577,8 +577,8 @@
                                 <h3 class="prop-block-title">Tin nhà đất</h3>
                                 <div class="prop-block-link">
                                     <a class="active" href="#">Tất cả</a>
-                                    <a href="#">Mua bán</a>
-                                    <a href="#">Cho thuê</a>
+                                    <a href="#" class="mua-ban">Mua bán</a>
+                                    <a href="#" class="cho-thue">Cho thuê</a>
                                 </div>
                             </div>
                             <div class="prop-block-content">
@@ -809,7 +809,7 @@
                     </ul>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <h3>Liên <span>kết</span></h3>
+                    <h3>Nhà đất <span>TP.HCM</span></h3>
                     <ul>
                         <li><a href="">Nhà đất quận 1</a></li>
                         <li><a href="">Nhà đất quận 2</a></li>
@@ -821,12 +821,12 @@
                     </ul>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <h3>Điều khoản <span>sử dụng</span></h3>
+                    <h3><span>Condotel</span> &amp; <span>Villas</span></h3>
                     <ul>
-                        <li><a href="">Điều khoản thỏa thuận </a></li>
-                        <li><a href="">Quy chế hoạt động</a></li>
-                        <li><a href="">Những câu hỏi thường gặp</a></li>
-                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Phú Quốc</a></li>
+                        <li><a href="">Đà Nẵng</a></li>
+                        <li><a href="">Nha Trang</a></li>
+                        <li><a href="">Phan Thiết</a></li>
                     </ul>
                 </div>
             </div>
