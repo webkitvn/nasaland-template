@@ -810,13 +810,13 @@ footer ul li a:hover {
 }
 
 .section-wrap:nth-child(even) .space-border {
-    left: 30%;
+    left: calc(30% - 1px);
     border-width: 100vh 50px 0 0;
     border-color: #444 transparent transparent transparent;
 }
 
 .section-wrap:nth-child(odd) .space-border {
-    right: 30%;
+    right: calc(30% - 1px);
     border-width: 0 50px 100vh 0;
     border-color: transparent #444 transparent transparent;
 }
