@@ -72,10 +72,16 @@ $(document).ready(function() {
         $item.height($wHeight);
     });
 
-    // $('.carousel').carousel({
-    //     interval: 6000,
-    //     pause: "false"
-    // });
+    $(".tinhlaisuat #addmore").click(function(e){
+        e.preventDefault();
+        $(".tinhlaisuat .khuyenmai").toggleClass("hidden");
+        return false;
+    })
+    $(".tinhlaisuat input[type=submit]").click(function(e){
+        e.preventDefault();
+        $(".tinhlaisuat .result").toggleClass("hidden");
+        return false;
+    })
 })
 $('.ui.dropdown')
     .dropdown();
