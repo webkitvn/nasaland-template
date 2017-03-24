@@ -20,6 +20,24 @@ $(document).ready(function() {
         }, 500, function() {});
         return false;
     })
+    
+    $('.scrollbar-outer').scrollbar();
+
+    $("#headroom .navbar ul li a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+        var hash = this.hash;
+        // animate
+        $.when(
+        	$('html, body').animate({
+	            scrollTop: $(hash).offset().top
+	        }, 300, function() {
+	            window.location.hash = hash;
+	        })
+        ).then(
+        	$("#headroom").removeClass('slideDown').addClass('slideUp')
+        )
+    });
+
     $("#headroom").headroom({
         "offset": 205,
         "tolerance": 5,
@@ -29,20 +47,8 @@ $(document).ready(function() {
             "unpinned": "slideUp"
         }
     });
-    $('.scrollbar-outer').scrollbar();
 
-    $("#headroom .navbar ul li a[href^='#']").on('click', function(e) {
-        e.preventDefault();
-        var hash = this.hash;
-        // animate
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 300, function() {
-            window.location.hash = hash;
-            $("#headroom").removeClass('slideDown').addClass('slideUp');
-        });
-
-    });
+    //$(".page-canho .main-content").css("padding-top", $('#headroom').outerHeight())
 
     //FULL DIV SLIDER
     var $item = $('.carousel .item');
