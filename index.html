@@ -21,7 +21,7 @@
         <div class="top-page">
             <div class="container">
                 <div class="top-link pull-right">
-                    <a href="#" class="hotline">Hotline: 0932.777.400</a>
+                    <a href="#" class="hotline">Hotline: 0909.777.500</a>
                     <a href="#" class="login">Đăng nhập</a>
                     <a href="#" class="regiter">Đăng kí</a>
                 </div>
@@ -37,7 +37,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img src="img/nasaland.png" alt=""></a>
+                        <a class="navbar-brand" href="#"><img src="img/nasaland.svg" alt=""></a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -150,14 +150,14 @@
                     <form class="search-form ui form" action="">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
-                                <div class="ui fluid action input big">
+                                <div class="ui fluid action input ">
                                     <input type="text" class="keywords" placeholder="Nhập từ khóa cần tìm kiếm (vd: dự án quận 2)">
-                                    <select class="ui compact big selection dropdown">
+                                    <select class="ui compact selection dropdown">
                                         <option value="all">Tất cả</option>
                                         <option selected="" value="canban">Cần bán</option>
                                         <option value="chothue">Cho thuê</option>
                                     </select>
-                                    <button type="submit" class="ui big button">
+                                    <button type="submit" class="ui button">
                                         Tìm kiếm
                                     </button>
                                 </div>
@@ -165,136 +165,194 @@
                             </div>
                         </div>
                         <div class="advance-search hidden">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-4">
-                                    <div class="ui form">
-                                        <div class="field">
-                                            <div class="ui selection dropdown">
-                                                <input type="hidden" name="loaiduan">
-                                                <i class="dropdown icon"></i>
-                                                <div class="default text">Loại dự án</div>
-                                                <div class="menu">
-                                                    <div class="item" data-value="1">Căn hộ, chung cư</div>
-                                                    <div class="item" data-value="2">Nhà phố</div>
-                                                    <div class="item" data-value="3">Biệt thự</div>
-                                                    <div class="item" data-value="4">Đất nền</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4">
-                                    <div class="ui form">
-                                        <div class="field">
-                                            <div class="ui selection search dropdown">
-                                                <input type="hidden" name="tinhthanh">
-                                                <i class="dropdown icon"></i>
-                                                <div class="default text">Tỉnh thành</div>
-                                                <div class="menu">
-                                                    <div class="item" data-value="1">Hồ Chí Minh</div>
-                                                    <div class="item" data-value="2">Hà Nội</div>
-                                                    <div class="item" data-value="3">Đồng Nai</div>
-                                                    <div class="item" data-value="4">Bình Dương</div>
-                                                    <div class="item" data-value="5">Đà Nẵng</div>
-                                                    <div class="item" data-value="6">Nha Trang</div>
-                                                    <div class="item" data-value="7">Long An</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-4">
-                                    <div class="ui form">
-                                        <div class="field">
-                                            <div class="ui selection search dropdown">
-                                                <input type="hidden" name="quanhuyen">
-                                                <i class="dropdown icon"></i>
-                                                <div class="default text">Quận huyện</div>
-                                                <div class="menu">
-                                                    <div class="item" data-value="1">Quận 1</div>
-                                                    <div class="item" data-value="2">Quận 2</div>
-                                                    <div class="item" data-value="3">Quận 3</div>
-                                                    <div class="item" data-value="4">Quận 4</div>
-                                                    <div class="item" data-value="5">Quận 5</div>
-                                                    <div class="item" data-value="6">Quận 6</div>
-                                                    <div class="item" data-value="7">Quận 7</div>
-                                                    <div class="item" data-value="7">Bình Thạnh</div>
-                                                    <div class="item" data-value="7">Gò Vấp</div>
-                                                    <div class="item" data-value="7">Tân Bình</div>
-                                                    <div class="item" data-value="7">Phú Nhuận</div>
-                                                </div>
-                                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection dropdown">
+                                        <input type="hidden" name="loainhadat">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Loại nhà đất</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="1">Căn hộ, chung cư</div>
+                                            <div class="item" data-value="2">Nhà phố</div>
+                                            <div class="item" data-value="3">Biệt thự</div>
+                                            <div class="item" data-value="4">Đất nền</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4 col-md-3">
-                                    <div class="ui form">
-                                        <div class="field">
-                                            <div class="ui selection search dropdown">
-                                                <input type="hidden" name="giatu">
-                                                <i class="dropdown icon"></i>
-                                                <div class="default text">Giá từ</div>
-                                                <div class="menu">
-                                                    <div class="item" data-value="1">Dưới 100 triệu</div>
-                                                    <div class="item" data-value="2">Từ 100 triệu đến 500 triệu</div>
-                                                    <div class="item" data-value="3">Từ 500 triệu đến 1 tỷ</div>
-                                                    <div class="item" data-value="4">Từ 1 tỷ đến 3 tỷ</div>
-                                                    <div class="item" data-value="5">Trên 3 tỷ</div>
-                                                </div>
-                                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection search dropdown">
+                                        <input type="hidden" name="tinhthanh">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Tỉnh thành</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="1">Hồ Chí Minh</div>
+                                            <div class="item" data-value="2">Hà Nội</div>
+                                            <div class="item" data-value="3">Đồng Nai</div>
+                                            <div class="item" data-value="4">Bình Dương</div>
+                                            <div class="item" data-value="5">Đà Nẵng</div>
+                                            <div class="item" data-value="6">Nha Trang</div>
+                                            <div class="item" data-value="7">Long An</div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-3">
-                                    <div class="ui form">
-                                        <div class="field">
-                                            <div class="ui selection search dropdown">
-                                                <input type="hidden" name="huong">
-                                                <i class="dropdown icon"></i>
-                                                <div class="default text">Hướng</div>
-                                                <div class="menu">
-                                                    <div class="item" data-value="1">Đông</div>
-                                                    <div class="item" data-value="2">Tây</div>
-                                                    <div class="item" data-value="3">Nam</div>
-                                                    <div class="item" data-value="4">Bắc</div>
-                                                    <div class="item" data-value="5">Đông bắc</div>
-                                                    <div class="item" data-value="6">Đông nam</div>
-                                                    <div class="item" data-value="7">Tây bắc</div>
-                                                    <div class="item" data-value="8">Tây nam</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-3">
-                                    <div class="ui form">
-                                        <div class="field"> 
-                                            <div class="ui selection search dropdown">
-                                                <input type="hidden" name="dientich">
-                                                <i class="dropdown icon"></i>
-                                                <div class="default text">Diện tích</div>
-                                                <div class="menu">
-                                                    <div class="item" data-value="1">Trên 30 m<sup>2</sup></div>
-                                                    <div class="item" data-value="2">Trên 100 m<sup>2</sup></div>
-                                                    <div class="item" data-value="3">Trên 200 m<sup>2</sup></div>
-                                                    <div class="item" data-value="4">Trên 300 m<sup>2</sup></div>
-                                                    <div class="item" data-value="5">Trên 500 m<sup>2</sup></div>
-                                                    <div class="item" data-value="6">Trên 600 m<sup>2</sup></div>
-                                                    <div class="item" data-value="7">Trên 700 m<sup>2</sup></div>
-                                                    <div class="item" data-value="8">Trên 1000 m<sup>2</sup></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-md-3">
-                                    <div class="field">
-                                        <input type="number" name="sophongngu" placeholder="Số phòng ngủ">
                                     </div>
                                 </div>
                             </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection search dropdown">
+                                        <input type="hidden" name="quanhuyen">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Quận huyện</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="1">Quận 1</div>
+                                            <div class="item" data-value="2">Quận 2</div>
+                                            <div class="item" data-value="3">Quận 3</div>
+                                            <div class="item" data-value="4">Quận 4</div>
+                                            <div class="item" data-value="5">Quận 5</div>
+                                            <div class="item" data-value="6">Quận 6</div>
+                                            <div class="item" data-value="7">Quận 7</div>
+                                            <div class="item" data-value="7">Bình Thạnh</div>
+                                            <div class="item" data-value="7">Gò Vấp</div>
+                                            <div class="item" data-value="7">Tân Bình</div>
+                                            <div class="item" data-value="7">Phú Nhuận</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection search dropdown">
+                                        <input type="hidden" name="phuongxa">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Phường - Xã</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="1">Phường 1</div>
+                                            <div class="item" data-value="2">Phường 2</div>
+                                            <div class="item" data-value="3">Phường 3</div>
+                                            <div class="item" data-value="4">Phường 4</div>
+                                            <div class="item" data-value="5">Phường 5</div>
+                                            <div class="item" data-value="6">Phường 6</div>
+                                            <div class="item" data-value="7">Phường 7</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection search dropdown">
+                                        <input type="hidden" name="duong">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Đường</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="1">Đường 1</div>
+                                            <div class="item" data-value="2">Đường 2</div>
+                                            <div class="item" data-value="3">Đường 3</div>
+                                            <div class="item" data-value="4">Đường 4</div>
+                                            <div class="item" data-value="5">Đường 5</div>
+                                            <div class="item" data-value="6">Đường 6</div>
+                                            <div class="item" data-value="7">Đường 7</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection search dropdown">
+                                        <input type="hidden" name="giatu">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Giá từ</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="1">Dưới 100 triệu</div>
+                                            <div class="item" data-value="2">Từ 100 triệu đến 500 triệu</div>
+                                            <div class="item" data-value="3">Từ 500 triệu đến 1 tỷ</div>
+                                            <div class="item" data-value="4">Từ 1 tỷ đến 3 tỷ</div>
+                                            <div class="item" data-value="5">Trên 3 tỷ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection search dropdown">
+                                        <input type="hidden" name="huong">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Hướng</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="1">Đông</div>
+                                            <div class="item" data-value="2">Tây</div>
+                                            <div class="item" data-value="3">Nam</div>
+                                            <div class="item" data-value="4">Bắc</div>
+                                            <div class="item" data-value="5">Đông bắc</div>
+                                            <div class="item" data-value="6">Đông nam</div>
+                                            <div class="item" data-value="7">Tây bắc</div>
+                                            <div class="item" data-value="8">Tây nam</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection search dropdown">
+                                        <input type="hidden" name="dientich">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Diện tích</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="1">Trên 30 m<sup>2</sup></div>
+                                            <div class="item" data-value="2">Trên 100 m<sup>2</sup></div>
+                                            <div class="item" data-value="3">Trên 200 m<sup>2</sup></div>
+                                            <div class="item" data-value="4">Trên 300 m<sup>2</sup></div>
+                                            <div class="item" data-value="5">Trên 500 m<sup>2</sup></div>
+                                            <div class="item" data-value="6">Trên 600 m<sup>2</sup></div>
+                                            <div class="item" data-value="7">Trên 700 m<sup>2</sup></div>
+                                            <div class="item" data-value="8">Trên 1000 m<sup>2</sup></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection search dropdown">
+                                        <input type="hidden" name="sophongngu">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Số phòng ngủ</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="1">1+</div>
+                                            <div class="item" data-value="2">2+</div>
+                                            <div class="item" data-value="3">3+</div>
+                                            <div class="item" data-value="4">4+</div>
+                                            <div class="item" data-value="5">5+</div>
+                                            <div class="item" data-value="6">6+</div>
+                                            <div class="item" data-value="7">7+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <div class="ui selection search dropdown">
+                                        <input type="hidden" name="sophongngu">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Chọn dự án</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">Không xác định</div>
+                                            <div class="item" data-value="1">Saigon Royal Residence</div>
+                                            <div class="item" data-value="2">Thủ Thiêm Garden</div>
+                                            <div class="item" data-value="3">The Vista</div>
+                                            <div class="item" data-value="4">Lancaster Lincoln</div>
+                                            <div class="item" data-value="5">The Sun Avenue</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
                     </form>
                 </div>
@@ -317,13 +375,13 @@
                                 <div class="prop-posts">
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type mua-ban">Mua bán</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -342,22 +400,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type cho-thue">Cho thuê</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -376,22 +431,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type mua-ban">Mua bán</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -410,22 +462,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type cho-thue">Cho thuê</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -444,22 +493,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type mua-ban">Mua bán</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -478,22 +524,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type cho-thue">Cho thuê</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -511,9 +554,6 @@
                                                             <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
-                                                    </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
                                                     </div>
                                                 </div>
                                             </div>
@@ -534,7 +574,7 @@
                     <div class="col-xs-12 col-md-6">
                         <div class="prop-block">
                             <div class="prop-block-header">
-                                <h3 class="prop-block-title">Tin dự án</h3>
+                                <h3 class="prop-block-title">Tin nhà đất</h3>
                                 <div class="prop-block-link">
                                     <a class="active" href="#">Tất cả</a>
                                     <a href="#">Mua bán</a>
@@ -545,13 +585,13 @@
                                 <div class="prop-posts">
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type mua-ban">Mua bán</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -570,22 +610,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type cho-thue">Cho thuê</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -604,22 +641,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type mua-ban">Mua bán</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -638,22 +672,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type cho-thue">Cho thuê</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -672,22 +703,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type mua-ban">Mua bán</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -706,22 +734,19 @@
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
                                                     </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prop-post hentry">
                                         <div class="row">
-                                            <div class="col-xs-5 col-md-5">
+                                            <div class="col-xs-4 col-md-4">
                                                 <div class="thumb">
                                                     <a href="#"><img data-src="holder.js/300x170?random=yes" alt=""></a>
                                                     <span class="type cho-thue">Cho thuê</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-7 col-md-7">
+                                            <div class="col-xs-8 col-md-8">
                                                 <div class="info">
                                                     <a href="#">
                                                         <h4 class="entry-title">
@@ -739,9 +764,6 @@
                                                             <i class="fa fa-map-marker" aria-hidden="true"></i> <span><a href="#">Tây Hồ</a>, <a href="#">Hà Nội</a></span>
                                                         </div>
                                                         <div class="published updated"><i class="fa fa-clock-o" aria-hidden="true"></i> 24/03/2017</div>
-                                                    </div>
-                                                    <div class="excerpt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, accusantium....
                                                     </div>
                                                 </div>
                                             </div>

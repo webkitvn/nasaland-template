@@ -1,3 +1,11 @@
+*{
+    -webkit-transform: translateZ(0) !important;
+    -moz-transform: translateZ(0) !important;
+    -ms-transform: translateZ(0) !important;
+    -o-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden  !important;
+}
 body {
     font-family: "sanfrancisco-regular", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -13,6 +21,7 @@ body {
 .top-page .top-link a {
     margin-left: 10px;
     color: #444;
+    font-size: .9em;
 }
 
 header {
@@ -71,9 +80,11 @@ header .top-banner img {
 }
 
 header .navigation {
+    background: #f1f1f1;
+}
+header#headroom .navigation {
     background: rgba(68, 68, 68, 0.5);
 }
-
 header .navbar {
     background: none;
     border-radius: 0;
@@ -83,12 +94,13 @@ header .navbar {
 
 .navbar-brand {
     padding: 2px;
+    display: block;
 }
 
 .navbar-brand>img {
     height: 100%;
     padding: 0px;
-    width: auto;
+    width: 100%;
     max-width: 55px;
 }
 
@@ -103,31 +115,31 @@ header .navbar-toggle span {
 
 header .navbar-nav a {
     text-transform: uppercase;
-    color: #fff;
+    color: #767676;
     transition: all .3s ease;
-    padding-top: 10px;
-    font-family: "sanfrancisco-bold";
+    font-family: "sanfrancisco-regular";
     font-size: 1.1em;
-    text-shadow: 0px 1px 2px rgba(0,0,0,.5);
 }
-
+header#headroom .navbar-nav a {
+    color: #fff;
+}
 header .navbar-nav #btn-search {
     color: #FFF;
     background: none;
 }
 
-header .navbar li.active > a,
-header .navbar a:hover {
-    background: none;
-    color: #f6680a !important;
+header .nav li.active > a,
+header .nav > li > a:hover {
+    color: #f6680a;
 }
-
+header .nav>li:hover>a, .nav>li:hover>a
 header .dropdown-menu,
 li.dropdown:hover,
+li.dropdown:hover > a,
 .nav .open>a,
 .nav .open>a:focus,
 .nav .open>a:hover {
-    background: #f6680a;
+    color: #f6680a;
 }
 
 .navbar-right .dropdown-menu {
@@ -137,21 +149,20 @@ li.dropdown:hover,
 
 li.dropdown:hover > .dropdown-menu {
     display: block;
-    border-top: 0;
     box-shadow: none;
-    top: 100px;
+    top: 70px;
+    background: #eee;
+    border: 0;
+    padding-bottom: 0;
 }
 
 .dropdown-menu>li>a {
-    color: #FFF;
-}
-
-header .navbar-nav>li:hover>a {
-    color: #444;
+    color: #f6680a;
+    padding: 7px 10px;
 }
 
 li.dropdown:hover>a {
-    color: #FFF !important;
+    color: #FFF;
 }
 
 header #searchform {
@@ -317,7 +328,6 @@ footer ul li a:hover {
     padding: 20px 0 30px;
     background: #FFF;
 }
-
 .search-form-container .keywords {
     background: rgba(241, 241, 241, 0.21) !important;
 }
@@ -361,15 +371,20 @@ footer ul li a:hover {
 }
 
 .advance-search {
-    padding: 10px;
+    padding: 1px;
     background: #efefef;
     transition: all .3s ease;
 }
-
+.advance-search .form{
+    width: 20%;
+    float: left;
+}
 .advance-search .row:last-child {
     margin-bottom: 0;
 }
-
+.ui.selection.dropdown{
+    border-radius: 0 !important;
+}
 .middle-content {
     margin-top: 20px;
 }
@@ -380,42 +395,42 @@ footer ul li a:hover {
 }
 
 .prop-block-header {
-    border-bottom: 2px solid #333;
+    border: 1px solid #DDD;
     overflow: hidden;
     position: relative;
 }
 
 .prop-block-header h3 {
-    font-family: "sanfrancisco-bold", sans-serif;
-    font-size: 1.5em;
+    font-family: "sanfrancisco-regular", sans-serif;
+    font-size: 1.2em;
     text-transform: uppercase;
     display: inline-block;
     float: left;
     margin: 0;
-    background: #444;
-    color: #FFF;
-    padding: 5px 10px;
+    background: #eaeaea;
+    color: #444;
+    padding: 7px 10px 5px;
     width: 100%;
 }
 
 .prop-block-link {
     position: absolute;
-    top: 10px;
+    top: 9px;
     right: 10px;
 }
 
 .prop-block-link a {
-    color: #FFF;
+    color: #0f529e;
     margin-left: 10px;
-    padding: 3px 10px;
+    padding: 3px 5px;
     border-radius: 3px !important;
-    opacity: .55;
     transition: all .3s ease;
 }
 
 .prop-block-link a:hover,
 .prop-block-link a.active {
     opacity: 1;
+    color: #fd802d;
 }
 
 .prop-block .prop-block-content {
@@ -426,7 +441,7 @@ footer ul li a:hover {
 .prop-post {
     overflow: hidden;
     border-bottom: 1px solid #efefef;
-    padding: 5px;
+    padding: 1px 2px;
 }
 
 .prop-post .thumb {
@@ -459,9 +474,10 @@ footer ul li a:hover {
 }
 
 .prop-post .info .entry-title {
+    margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 13px;
-    font-family: "sanfrancisco-bold", sans-serif;
+    font-size: .9em;
+    font-family: "sanfrancisco-regular", sans-serif;
 }
 
 .prop-post .info a:hover .entry-title {
@@ -1030,16 +1046,24 @@ footer ul li a:hover {
     }
     .box-group .box {
         display: inline-block;
-        width: calc(100%/2 - 2px);
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
     }
     header .navbar-toggle {
         margin-top: 10px !important;
     }
-    header .nasaland-logo {
-        width: 50px;
+    header .navbar-header{
+        float: none !important;
+        text-align: center;
     }
-    .home .slider {
-        margin-top: 52px;
+    header .navbar-header a{
+        text-align: center;
+        display: block;
+        float: none;
+    }
+    header .navbar-header a img{
+        margin: 0 auto;
     }
     .page-duan .cat-list {
         justify-content: center;
@@ -1076,6 +1100,22 @@ footer ul li a:hover {
 @media (max-width: 640px) {
     .section-wrap .slider .item.full-screen {
         height: 458px !important;
+    }
+    header .navbar-header{
+        float: none !important;
+        text-align: center;
+    }
+    header .navbar-header a{
+        text-align: center;
+        display: block;
+        float: left;
+    }
+    header .navbar-header a img{
+        margin: 0 auto;
+    }
+    .box-group .box h3{
+        font-size: .9em;
+        min-width: 80%;
     }
 }
 
