@@ -290,7 +290,7 @@ footer {
 }
 
 footer h3 {
-    font-family: "sanfrancisco-bold";
+    font-family: "sanfrancisco-regular";
     text-transform: uppercase;
     font-size: 1.2em;
     margin-top: 20px !important;
@@ -388,8 +388,8 @@ footer ul li a:hover {
     width: 20%;
     float: left;
 }
-.advance-search .row:last-child {
-    margin-bottom: 0;
+.ui.default.dropdown:not(.button)>.text, .ui.dropdown:not(.button)>.default.text{
+    color: #444;
 }
 .ui.selection.dropdown{
     border-radius: 0 !important;
@@ -429,7 +429,7 @@ footer ul li a:hover {
 }
 
 .prop-block-link a {
-    color: #0d8fdb;
+    color: #055699;
     margin-left: 10px;
     padding: 3px 5px;
     border-radius: 3px !important;
@@ -501,6 +501,7 @@ footer ul li a:hover {
     margin-bottom: 10px;
     font-size: .9em;
     font-family: "sanfrancisco-regular", sans-serif;
+    color: #055699;
 }
 
 .prop-post .info a:hover .entry-title {
