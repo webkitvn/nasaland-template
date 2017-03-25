@@ -1,3 +1,20 @@
+jQuery(function($) {
+    if($(window).width()>769){
+        $('.navbar .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+        });
+
+        $('.navbar .dropdown > a').click(function(){
+            location.href = this.href;
+        });
+
+    }
+});
+
 $(document).ready(function() {
     $('#btn-search').click(function() {
         $(this).toggleClass('active');
@@ -51,13 +68,13 @@ $(document).ready(function() {
     //$(".page-canho .main-content").css("padding-top", $('#headroom').outerHeight())
 
     //FULL DIV SLIDER
-    var $item = $('.carousel .item');
-    var $wHeight = $('.full-height').height();
+    var $item = $('.page-canho .carousel .item');
+    var $wHeight = $('.page-canho .full-height').height();
     $item.eq(0).addClass('active');
     $item.height($wHeight);
     $item.addClass('full-screen');
 
-    $('.carousel img').each(function() {
+    $('.page-canho .carousel img').each(function() {
         var $src = $(this).attr('src');
         var $color = $(this).attr('data-color');
         $(this).parent().css({

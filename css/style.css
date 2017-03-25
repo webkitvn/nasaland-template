@@ -123,7 +123,9 @@ header .navbar-nav #btn-search {
     color: #FFF;
     background: none;
 }
-
+header .caret {
+    position: absolute !important; top: 50%; right: 3px;
+}
 header .nav li.active > a,
 header .nav > li > a:hover {
     color: #f6680a;
@@ -143,14 +145,14 @@ li.dropdown:hover > a,
     min-width: 190px;
 }
 
-li.dropdown:hover > .dropdown-menu {
+/*li.dropdown:hover > .dropdown-menu {
     display: block;
     box-shadow: none;
     top: 70px;
     background: #eee;
     border: 0;
     padding-bottom: 0;
-}
+}*/
 
 .dropdown-menu>li>a {
     color: #f6680a;
@@ -339,27 +341,17 @@ footer ul li a:hover {
     background: rgba(241, 241, 241, 0.21) !important;
 }
 
-.page-duan .top-content .search-form-container button[type=submit] {
-    background: rgba(0, 0, 0, 0.8);
+.top-content .search-form-container button[type=submit] {
+    background: rgb(246, 104, 10);
     color: #fff;
     text-transform: uppercase;
     font-size: .9em;
     font-family: "sanfrancisco-bold";
 }
 
-.page-duan .top-content .search-form-container button[type=submit]:hover {
-    color: #f6680a;
+.top-content .search-form-container button[type=submit]:hover {
+    background: rgb(226, 91, 1);
 }
-
-.page-duan .top-content .main-title {
-    font-family: "sanfrancisco-bold";
-    text-transform: uppercase;
-    color: #f6680a;
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
 .search-form-container .row {
     margin-bottom: 10px;
 }
@@ -1177,8 +1169,69 @@ footer ul li a:hover {
     background: #f6680a;
     color: #FFF;
 }
-
-
+.default-page .top-content{
+    margin-top: 15px;
+}
+.default-page .main-content{
+    padding-top: 20px;
+}
+.default-page .page-content{
+    background: #f1f1f1;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+.default-page .page-content h1.title{
+    color: #f6680a;
+    text-transform: uppercase;
+}
+.default-page .page-content p{
+    text-align: justify;
+}
+.default-page .page-content img{
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px;
+}
+.about-links .content{
+    padding: 0;
+}
+.about-links .content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.about-links .content ul li{
+    margin-bottom: 0;
+}
+.about-links ul li a{
+    border-bottom: 1px solid #FFF;
+    display: block;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+.about-links ul li.active a, .page-gioi-thieu .about-links ul li a:hover{
+    background: #e7e7e7;
+    border-left: 2px solid #f6680a;
+}
+.duan-noibat .content{
+    padding: 0 5px 0 0;
+}
+.duan-noibat .content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.duan-noibat .content ul li{
+    overflow: hidden;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 0;
+}
+.duan-noibat .post .thumb{
+    width: 110px !important;
+    height: auto !important;
+    float: left;
+    margin-right: 5px;
+}
 /*-----------MEDIA------------*/
 
 @media (max-width: 768px) {

@@ -16,7 +16,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-duan home">
+<body class="page-template default-page page-gioi-thieu">
     <header>
         <div class="top-page">
             <div class="container">
@@ -42,9 +42,17 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Giới thiệu</a></li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dự án <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Giới thiệu <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Lịch sử hình thành</a></li>
+                                    <li><a href="#">Tần nhìn sứ mệnh</a></li>
+                                    <li><a href="#">Văn hóa doanh nghiệp</a></li>
+                                    <li><a href="#">Dịch vụ</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="du-an.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dự án <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Căn hộ, chung cư</a></li>
                                     <li><a href="#">Condotel &amp; Villas</a></li>
@@ -70,10 +78,362 @@
             </div>
         </div>
     </header>
+    <div class="top-content">
+        <div class="container">
+            <div class="search-form-container">
+                <form class="search-form ui form" action="">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="ui fluid action input ">
+                                <input type="text" class="keywords" placeholder="Nhập từ khóa cần tìm kiếm (vd: dự án quận 2)">
+                                <select class="ui compact selection dropdown">
+                                    <option value="all">Tất cả</option>
+                                    <option selected="" value="canban">Cần bán</option>
+                                    <option value="chothue">Cho thuê</option>
+                                </select>
+                                <button type="submit" class="ui button">
+                                    Tìm kiếm
+                                </button>
+                            </div>
+                            <a href="#" id="advance-search" class="text-center">Tìm kiếm nâng cao</a>
+                        </div>
+                    </div>
+                    <div class="advance-search hidden">
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="loainhadat">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Loại nhà đất</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Loại nhà đất</div>
+                                        <div class="item" data-value="1">Căn hộ, chung cư</div>
+                                        <div class="item" data-value="2">Nhà phố</div>
+                                        <div class="item" data-value="3">Biệt thự</div>
+                                        <div class="item" data-value="4">Đất nền</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="tinhthanh">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Tỉnh thành</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="1">Hồ Chí Minh</div>
+                                        <div class="item" data-value="2">Hà Nội</div>
+                                        <div class="item" data-value="3">Đồng Nai</div>
+                                        <div class="item" data-value="4">Bình Dương</div>
+                                        <div class="item" data-value="5">Đà Nẵng</div>
+                                        <div class="item" data-value="6">Nha Trang</div>
+                                        <div class="item" data-value="7">Long An</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="quanhuyen">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Quận huyện</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Quận huyện</div>
+                                        <div class="item" data-value="1">Quận 1</div>
+                                        <div class="item" data-value="2">Quận 2</div>
+                                        <div class="item" data-value="3">Quận 3</div>
+                                        <div class="item" data-value="4">Quận 4</div>
+                                        <div class="item" data-value="5">Quận 5</div>
+                                        <div class="item" data-value="6">Quận 6</div>
+                                        <div class="item" data-value="7">Quận 7</div>
+                                        <div class="item" data-value="7">Bình Thạnh</div>
+                                        <div class="item" data-value="7">Gò Vấp</div>
+                                        <div class="item" data-value="7">Tân Bình</div>
+                                        <div class="item" data-value="7">Phú Nhuận</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="phuongxa">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Phường - Xã</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Phường - Xã</div>
+                                        <div class="item" data-value="1">Phường 1</div>
+                                        <div class="item" data-value="2">Phường 2</div>
+                                        <div class="item" data-value="3">Phường 3</div>
+                                        <div class="item" data-value="4">Phường 4</div>
+                                        <div class="item" data-value="5">Phường 5</div>
+                                        <div class="item" data-value="6">Phường 6</div>
+                                        <div class="item" data-value="7">Phường 7</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="duong">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Đường</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Đường</div>
+                                        <div class="item" data-value="1">Đường 1</div>
+                                        <div class="item" data-value="2">Đường 2</div>
+                                        <div class="item" data-value="3">Đường 3</div>
+                                        <div class="item" data-value="4">Đường 4</div>
+                                        <div class="item" data-value="5">Đường 5</div>
+                                        <div class="item" data-value="6">Đường 6</div>
+                                        <div class="item" data-value="7">Đường 7</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="giatu">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Giá từ</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Giá từ</div>
+                                        <div class="item" data-value="1">Dưới 100 triệu</div>
+                                        <div class="item" data-value="2">Từ 100 triệu đến 500 triệu</div>
+                                        <div class="item" data-value="3">Từ 500 triệu đến 1 tỷ</div>
+                                        <div class="item" data-value="4">Từ 1 tỷ đến 3 tỷ</div>
+                                        <div class="item" data-value="5">Trên 3 tỷ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="huong">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Hướng</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Hướng</div>
+                                        <div class="item" data-value="1">Đông</div>
+                                        <div class="item" data-value="2">Tây</div>
+                                        <div class="item" data-value="3">Nam</div>
+                                        <div class="item" data-value="4">Bắc</div>
+                                        <div class="item" data-value="5">Đông bắc</div>
+                                        <div class="item" data-value="6">Đông nam</div>
+                                        <div class="item" data-value="7">Tây bắc</div>
+                                        <div class="item" data-value="8">Tây nam</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="dientich">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Diện tích</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Diện tích</div>
+                                        <div class="item" data-value="1">Trên 30 m<sup>2</sup></div>
+                                        <div class="item" data-value="2">Trên 100 m<sup>2</sup></div>
+                                        <div class="item" data-value="3">Trên 200 m<sup>2</sup></div>
+                                        <div class="item" data-value="4">Trên 300 m<sup>2</sup></div>
+                                        <div class="item" data-value="5">Trên 500 m<sup>2</sup></div>
+                                        <div class="item" data-value="6">Trên 600 m<sup>2</sup></div>
+                                        <div class="item" data-value="7">Trên 700 m<sup>2</sup></div>
+                                        <div class="item" data-value="8">Trên 1000 m<sup>2</sup></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="sophongngu">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Số phòng ngủ</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Số phòng ngủ</div>
+                                        <div class="item" data-value="1">1+</div>
+                                        <div class="item" data-value="2">2+</div>
+                                        <div class="item" data-value="3">3+</div>
+                                        <div class="item" data-value="4">4+</div>
+                                        <div class="item" data-value="5">5+</div>
+                                        <div class="item" data-value="6">6+</div>
+                                        <div class="item" data-value="7">7+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui form">
+                            <div class="field">
+                                <div class="ui selection search dropdown">
+                                    <input type="hidden" name="sophongngu">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Chọn dự án</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Chọn dự án</div>
+                                        <div class="item" data-value="1">Saigon Royal Residence</div>
+                                        <div class="item" data-value="2">Thủ Thiêm Garden</div>
+                                        <div class="item" data-value="3">The Vista</div>
+                                        <div class="item" data-value="4">Lancaster Lincoln</div>
+                                        <div class="item" data-value="5">The Sun Avenue</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <div class="main-content">
         <div class="container">
             <div class="middle-content">
                 <div class="row">
+                    <div class="col-xs-12 col-md-9">
+                        <div class="page-content">
+                            <h1 class="title">Lịch sử hình thành</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h2>H2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                            <img src="holder.js/800x400/?random=yes" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem est esse quam architecto tempore dolores tempora adipisci facilis culpa optio perferendis dicta facere, atque et velit alias quae ad delectus!</p>
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, tempore.</li>
+                                <li>Impedit delectus, atque assumenda unde nihil eius neque dolores laboriosam.</li>
+                                <li>Atque quae explicabo architecto, cupiditate, delectus quidem odit ea laboriosam!</li>
+                                <li>Magni debitis laudantium voluptas placeat vitae, mollitia, maxime! Laborum, odio.</li>
+                                <li>Et autem rerum tempore minus. Quidem voluptatem quibusdam dignissimos quae?</li>
+                            </ol>
+                            <h3>H3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <img src="holder.js/800x400/?random=yes" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem est esse quam architecto tempore dolores tempora adipisci facilis culpa optio perferendis dicta facere, atque et velit alias quae ad delectus!</p>
+                            <h4>H4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                            <img src="holder.js/800x400/?random=yes" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem est esse quam architecto tempore dolores tempora adipisci facilis culpa optio perferendis dicta facere, atque et velit alias quae ad delectus!</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="right-content about-links">
+                            <div class="header">
+                                <h3>Giới thiệu</h3>
+                            </div>
+                            <div class="content">
+                                <ul>
+                                    <li class="active"><a href="#">Lịch sử hình thành</a></li>
+                                    <li><a href="#">Tầm nhìn &amp; Sứ mệnh</a></li>
+                                    <li><a href="#">Văn hóa doanh nghiệp</a></li>
+                                    <li><a href="#">Dịch vụ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right-content ads">
+                            <div class="content">
+                                <a href="#">
+                                    <img src="holder.js/300x300?random=yes&text=Banner" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right-content tinhlaisuat">
+                            <div class="content">
+                                <h3>Tính lãi suất vay</h3>
+                                <form>
+                                    <div class="line">
+                                        <div class="col-2">
+                                            <label>Số tiền vay</label>
+                                            <input type="number" name="sotienvay">
+                                        </div>
+                                        <div class="col-2">
+                                            <label>Thời gian vay</label>
+                                            <input type="number" name="thoigianvay">
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="col-1">
+                                            <label>Lãi xuất cố định(%/năm)</label>
+                                            <input type="number" name="laixatcodinh">
+                                        </div>
+                                    </div>
+                                    <div class="line khuyenmai hidden">
+                                        <div class="col-2">
+                                            <label>Lãi suất KM (%/năm)</label>
+                                            <input type="number" name="laixatkm">
+                                        </div>
+                                        <div class="col-2">
+                                            <label>Thời gian KM (tháng)</label>
+                                            <input type="number" name="thoigiankm">
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="col-1">
+                                            <a id="addmore" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm lãi xuất khuyến mãi</a>
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="col-1">
+                                            <input type="submit" name="" value="Tính">
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="result hidden">
+                                    <h4>Tổng số tiền gốc + lãi tháng cao nhất</h4>
+                                    <span class="price">8.439.229 VNĐ</span>
+                                    <a href="#">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-content duan-noibat">
+                            <div class="header">
+                                <h3>Dự án nổi bật</h3>
+                            </div>
+                            <div class="content">
+                                <ul>
+                                    <li class="post"><a href="#">
+                                    <img src="holder.js/177x97/?random=yes" alt="" class="thumb">
+                                    TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
+                                    <li class="post"><a href="#">
+                                    <img src="holder.js/177x97/?random=yes" alt="" class="thumb">
+                                    TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
+                                    <li class="post"><a href="#">
+                                    <img src="holder.js/177x97/?random=yes" alt="" class="thumb">
+                                    TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
+                                    <li class="post"><a href="#">
+                                    <img src="holder.js/177x97/?random=yes" alt="" class="thumb">
+                                    TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
+                                    <li class="post"><a href="#">
+                                    <img src="holder.js/177x97/?random=yes" alt="" class="thumb">
+                                    TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                        <div class="header">
+                            <h3>Tin nổi bật</h3>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li class="post"><a href="#">TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
+                                <li class="post"><a href="#">Nhà đầu tư căn hộ lo ngân hàng siết cho vay</a></li>
+                                <li class="post"><a href="#">Mua bán nhà đất chỉ có giấy viết tay được cấp sổ đỏ 6</a></li>
+                                <li class="post"><a href="#">Năm 2017 chưa có bong bóng bất động sản </a></li>
+                                <li class="post"><a href="#">Hà Nội: dồi dào nguồn cung nhà giá rẻ đầu năm</a></li>
+                                <li class="post"><a href="#">Giới đầu tư tìm quỹ đất mới tại khu Tây Sài Gòn</a></li>
+                                <li class="post"><a href="#">TP.HCM: Căn hộ giảm giá mạnh vẫn vắng khách</a></li>
+                                <li class="post"><a href="#">Nhà đầu tư căn hộ lo ngân hàng siết cho vay</a></li>
+                                <li class="post"><a href="#">Mua bán nhà đất chỉ có giấy viết tay được cấp sổ đỏ 6</a></li>
+                                <li class="post"><a href="#">Năm 2017 chưa có bong bóng bất động sản </a></li>
+                                <li class="post"><a href="#">Hà Nội: dồi dào nguồn cung nhà giá rẻ đầu năm</a></li>
+                                <li class="post"><a href="#">Giới đầu tư tìm quỹ đất mới tại khu Tây Sài Gòn</a></li>
+                                <li class="post"><a href="#">Mua bán nhà đất chỉ có giấy viết tay được cấp sổ đỏ 6</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
