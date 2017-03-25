@@ -145,14 +145,13 @@ li.dropdown:hover > a,
     min-width: 190px;
 }
 
-/*li.dropdown:hover > .dropdown-menu {
-    display: block;
+li.dropdown > .dropdown-menu {
     box-shadow: none;
     top: 70px;
     background: #eee;
     border: 0;
     padding-bottom: 0;
-}*/
+}
 
 .dropdown-menu>li>a {
     color: #f6680a;
@@ -1456,4 +1455,3 @@ footer ul li a:hover {
 .scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
     top: -14px;
 }
-
