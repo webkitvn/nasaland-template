@@ -623,6 +623,7 @@ footer ul li a:hover {
     margin-bottom: 2px;
     text-overflow: ellipsis;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 .duan .title {
@@ -650,11 +651,12 @@ footer ul li a:hover {
 
 .page-duan .first .duan .info strong{
     display: inline-block;
-    width: 60px;
+    width: 70px;
 }
 .page-duan .first .duan .info strong span{
     float: right;
     font-weight: 400;
+    display: inline-block;
 }
 .page-duan .first .info {
     font-size: 1em;
