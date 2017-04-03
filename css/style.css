@@ -1064,7 +1064,7 @@ footer ul li a:hover {
     background-repeat: no-repeat;
 }
 
-#thiet-ke .carousel-indicators li {
+.tab-slide .carousel-indicators li {
     text-indent: 0;
     width: auto;
     height: auto;
@@ -1074,7 +1074,7 @@ footer ul li a:hover {
     color: #FFF;
 }
 
-#thiet-ke .carousel-indicators li.active {
+.tab-slide .carousel-indicators li.active {
     color: #444;
 }
 
