@@ -623,7 +623,6 @@ footer ul li a:hover {
     margin-bottom: 2px;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 .duan .title {
@@ -651,12 +650,11 @@ footer ul li a:hover {
 
 .page-duan .first .duan .info strong{
     display: inline-block;
-    width: 70px;
+    width: 60px;
 }
 .page-duan .first .duan .info strong span{
     float: right;
     font-weight: 400;
-    display: inline-block;
 }
 .page-duan .first .info {
     font-size: 1em;
@@ -1066,7 +1064,7 @@ footer ul li a:hover {
     background-repeat: no-repeat;
 }
 
-.tab-slide .carousel-indicators li {
+#thiet-ke .carousel-indicators li {
     text-indent: 0;
     width: auto;
     height: auto;
@@ -1076,7 +1074,7 @@ footer ul li a:hover {
     color: #FFF;
 }
 
-.tab-slide .carousel-indicators li.active {
+#thiet-ke .carousel-indicators li.active {
     color: #444;
 }
 
@@ -1288,13 +1286,16 @@ footer ul li a:hover {
         padding: 10px;
     }
     .section-wrap .slider .item.full-screen {
-        height: 550px !important;
+        height: 501px !important;
+        background-size: 100%;
     }
 }
 
 @media (max-width: 640px) {
     .section-wrap .slider .item.full-screen {
-        height: 458px !important;
+        height: 256px !important;
+        width: 100% !important;
+        background-size: 100%;
     }
     header .navbar-header{
         float: none !important;
