@@ -603,7 +603,7 @@ footer ul li a:hover {
 }
 
 .page-duan .first .image {
-    width: 163px;
+    width: 180px;
     float: left;
     margin-right: 10px;
 }
@@ -650,7 +650,7 @@ footer ul li a:hover {
 
 .page-duan .first .duan .info strong{
     display: inline-block;
-    width: 60px;
+    width: 65px;
 }
 .page-duan .first .duan .info strong span{
     float: right;
@@ -666,6 +666,7 @@ footer ul li a:hover {
     font-size: 2em;
     margin-bottom: 10px;
     font-family: "sanfrancisco-regular", sans-serif;
+    text-transform: uppercase;
 }
 
 .page-duan .first .title a {
@@ -690,7 +691,7 @@ footer ul li a:hover {
     font-weight: 400;
 }
 .page-duan .first .description {
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: justify;
 }
 
@@ -1275,6 +1276,10 @@ footer ul li a:hover {
         border: 0;
         border-bottom: 1px solid #DDD;
     }
+    .page-duan .first .description {
+        font-size: 1em !important;
+        text-align: justify;
+    }
     .section-wrap#intro {
         height: 100vh;
     }
@@ -1295,6 +1300,9 @@ footer ul li a:hover {
     .section-wrap .slider .item.full-screen {
         height: 501px !important;
         background-size: 100%;
+    }
+    .page-duan .first .viewmore{
+        display: none !important;
     }
 }
 
